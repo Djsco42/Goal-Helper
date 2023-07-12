@@ -20,7 +20,9 @@ namespace GoalWin
     /// </summary>
     public partial class MainWindow : Window
     {
-        string Gdateinfo;
+        string GDateinfo;
+        String GNameinfo;
+        string GNoteinfo;
         public MainWindow()
         {
             InitializeComponent();
@@ -28,8 +30,10 @@ namespace GoalWin
 
         private void Gsum_Click(object sender, RoutedEventArgs e)
         {
-            Gdateinfo = GDate.Text;
-            
+            GDateinfo = GDate.Text;
+            GNameinfo = Gname.Text;
+            GNoteinfo = Gnote.Text;
+            Console.Write("Name of Goal: "+ GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo);
              
         }
 

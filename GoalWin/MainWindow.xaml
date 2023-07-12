@@ -12,19 +12,19 @@
         
         >
 
-    <Grid x:Name="Ggrid" Margin="36,36,638,36" MinHeight="270" MinWidth="200" HorizontalAlignment="Left" VerticalAlignment="Top" >
+    <Grid x:Name="Ggrid" Margin="36,36,0,0" MinHeight="270" MinWidth="200" HorizontalAlignment="Left" VerticalAlignment="Top" Width="242" >
 
-        <DatePicker x:Name="GDate"  Height="30" Width="115" MinHeight="30" MinWidth="115" BorderBrush="{x:Null}" Foreground="Black" Margin="50,112,50,255"/>
-        <Button x:Name="Gsum" Content="Summit Goal" Margin="40,230,40,10"  BorderBrush="{x:Null}" Background="#FF1DCA5F" FontWeight="Bold" Click="Gsum_Click" Height="30" Width="120" MinHeight="30" MinWidth="120"/>
-        <Label x:Name="Glable" Content="Setting Up A Goal" Margin="16,10,10,350" Background="{x:Null}" Foreground="#FFF34444" FontWeight="Bold" FontSize="20" Height="45" Width="200"/>
+        <DatePicker x:Name="GDate"  Height="30" Width="115" MinHeight="30" MinWidth="115" BorderBrush="{x:Null}" Foreground="Black" Margin="58,119,52,256"/>
+        <Button x:Name="Gsum" Content="Summit Goal" Margin="56,296,50,79"  BorderBrush="{x:Null}" Background="#FF1DCA5F" FontWeight="Bold" Click="Gsum_Click" Height="30" Width="120" MinHeight="30" MinWidth="120"/>
+        <Label x:Name="Glable" Content="Setting Up A Goal" Margin="13,10,13,350" Background="{x:Null}" Foreground="#FFF34444" FontWeight="Bold" FontSize="20" Height="45" Width="200"/>
         <Rectangle HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30" Margin="0,0,0,0"/>
-        <TextBox x:Name="Gname" Margin="22,64,16,305" BorderBrush="{x:Null}">
+        <TextBox x:Name="Gname" Margin="13,60,13,309" BorderBrush="{x:Null}" FontSize="15" >
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Style.Resources>
                         <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="None">
                             <VisualBrush.Visual>
-                                <TextBlock Text="Add A Title" FontStyle="Italic" Foreground="Black" FontSize="18" />
+                                <TextBlock Text="Add A Title To Your Goal" FontStyle="Italic" Foreground="Black" FontSize="18" />
                             </VisualBrush.Visual>
                         </VisualBrush>
                     </Style.Resources>
@@ -39,7 +39,27 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-
+        <TextBox x:Name="Gnote" Margin="13,166,13,203" BorderBrush="{x:Null}" TextWrapping="Wrap" FontSize="15">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Style.Resources>
+                        <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="none">
+                            <VisualBrush.Visual>
+                                <TextBlock Text="Extra Notes To Pursue Goal" FontStyle="Italic" Foreground="Black" FontSize="18" TextWrapping="Wrap"/>
+                            </VisualBrush.Visual>
+                        </VisualBrush>
+                    </Style.Resources>
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="">
+                            <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsKeyboardFocused" Value="True">
+                            <Setter Property="Background" Value="White" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
     </Grid>
 </Window>
