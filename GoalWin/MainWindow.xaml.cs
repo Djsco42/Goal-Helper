@@ -21,9 +21,9 @@ namespace GoalWin
     public partial class MainWindow : Window
     {
         string GDateinfo;
-        String GNameinfo;
+        string GNameinfo;
         string GNoteinfo;
-        String GPri;
+        string GPri;
         public MainWindow()
         {
             InitializeComponent();
@@ -37,21 +37,35 @@ namespace GoalWin
                 GInputState.Text = "Goal Summited";
                 GInputState.Foreground = new SolidColorBrush(Colors.Green);
 
+
                 GDateinfo = GDate.Text;
                 GNameinfo = Gname.Text;
                 GNoteinfo = Gnote.Text;
-                GPri=Gpry.Text;
-                Console.Write("Name of Goal: " + GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo);
+                GPri = Gpry.Text;
+
+
+                if (string.IsNullOrEmpty(GDate.Text))
+                {
+                    GDateinfo = "none";
+                }
+                if (string.IsNullOrEmpty(Gnote.Text))
+                {
+                    GNoteinfo = "none";
+                }
+                if (string.IsNullOrEmpty(Gpry.Text))
+                {
+                    GPri = "none";
+                }
                 GDate.Text = "";
                 Gname.Text = "";
                 Gnote.Text = "";
                 Gpry.Text = "";
+                Console.Write("Name of Goal: " + GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo + " Priority: " + GPri);
 
             }
-
             else
             {
-                GInputState.Foreground=new SolidColorBrush(Colors.Red);
+                GInputState.Foreground = new SolidColorBrush(Colors.Red);
                 GInputState.Text = "Please Enter A Name For Your Goal";
             }
 

@@ -82,7 +82,6 @@
             </TextBox.Style>
         </TextBox>
         <TextBlock x:Name="GInputState" HorizontalAlignment="Center" Margin="0,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" Height="45" FontSize="15" FontWeight="Bold" TextAlignment="Center"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="447,10,-447,-10"/>
 
     </Grid>
 </Window>
