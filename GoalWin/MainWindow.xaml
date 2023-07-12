@@ -12,12 +12,12 @@
         
         >
 
-    <Grid x:Name="Ggrid" Margin="36,36,0,0" MinHeight="270" MinWidth="200" HorizontalAlignment="Left" VerticalAlignment="Top" Width="242" >
+    <Grid x:Name="Ggrid" Margin="36,36,0,0" MinHeight="270" MinWidth="200" HorizontalAlignment="Left" VerticalAlignment="Top" Width="242" MouseLeave="Gleave" >
 
         <DatePicker x:Name="GDate"  Height="30" Width="115" MinHeight="30" MinWidth="115" BorderBrush="{x:Null}" Foreground="Black" Margin="58,119,52,256"/>
         <Button x:Name="Gsum" Content="Summit Goal" Margin="56,296,50,79"  BorderBrush="{x:Null}" Background="#FF1DCA5F" FontWeight="Bold" Click="Gsum_Click" Height="30" Width="120" MinHeight="30" MinWidth="120"/>
         <Label x:Name="Glable" Content="Setting Up A Goal" Margin="13,10,13,350" Background="{x:Null}" Foreground="#FFF34444" FontWeight="Bold" FontSize="20" Height="45" Width="200"/>
-        <Rectangle HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30" Margin="0,0,0,0"/>
+        <Rectangle x:Name="Grec" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30" Margin="0,0,0,0"/>
         <TextBox x:Name="Gname" Margin="13,60,13,309" BorderBrush="{x:Null}" FontSize="15" >
             <TextBox.Style>
                 <Style TargetType="TextBox">
@@ -60,6 +60,29 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
+        <TextBox x:Name="Gpry" Margin="13,238,13,131" BorderBrush="{x:Null}" TextWrapping="Wrap" FontSize="15" PreviewTextInput="NumericTextBox_PreviewTextInput">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Style.Resources>
+                        <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="none">
+                            <VisualBrush.Visual>
+                                <TextBlock Text="Add Goal Priority If Needed" FontStyle="Italic" Foreground="Black" FontSize="18" TextWrapping="Wrap"/>
+                            </VisualBrush.Visual>
+                        </VisualBrush>
+                    </Style.Resources>
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="">
+                            <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsKeyboardFocused" Value="True">
+                            <Setter Property="Background" Value="White" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock x:Name="GInputState" HorizontalAlignment="Center" Margin="0,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" Height="45" FontSize="15" FontWeight="Bold" TextAlignment="Center"/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="447,10,-447,-10"/>
 
     </Grid>
 </Window>

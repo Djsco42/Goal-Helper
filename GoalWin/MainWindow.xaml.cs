@@ -23,6 +23,7 @@ namespace GoalWin
         string GDateinfo;
         String GNameinfo;
         string GNoteinfo;
+        String GPri;
         public MainWindow()
         {
             InitializeComponent();
@@ -30,12 +31,46 @@ namespace GoalWin
 
         private void Gsum_Click(object sender, RoutedEventArgs e)
         {
-            GDateinfo = GDate.Text;
-            GNameinfo = Gname.Text;
-            GNoteinfo = Gnote.Text;
-            Console.Write("Name of Goal: "+ GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo);
-             
+            if (!string.IsNullOrEmpty(Gname.Text))
+            {
+                string numericValue = Gname.Text;
+                GInputState.Text = "Goal Summited";
+                GInputState.Foreground = new SolidColorBrush(Colors.Green);
+
+                GDateinfo = GDate.Text;
+                GNameinfo = Gname.Text;
+                GNoteinfo = Gnote.Text;
+                GPri=Gpry.Text;
+                Console.Write("Name of Goal: " + GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo);
+                GDate.Text = "";
+                Gname.Text = "";
+                Gnote.Text = "";
+                Gpry.Text = "";
+
+            }
+
+            else
+            {
+                GInputState.Foreground=new SolidColorBrush(Colors.Red);
+                GInputState.Text = "Please Enter A Name For Your Goal";
+            }
+
+
+                
         }
 
+        private void NumericTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Check if the entered text is a valid number
+            if (!int.TryParse(e.Text, out _))
+            {
+                e.Handled = true; // Cancel the input event if it is not a number
+            }
+        }
+
+        private void Gleave(object sender, MouseEventArgs e)
+        {
+            GInputState.Text = "";
+;        }
     }
 }
