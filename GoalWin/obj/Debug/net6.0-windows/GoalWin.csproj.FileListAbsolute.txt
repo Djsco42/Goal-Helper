@@ -19,4 +19,3 @@ C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\refint\
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\GoalWin.pdb
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\GoalWin.genruntimeconfig.cache
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\ref\GoalWin.dll
-C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\GoalWin_Content.g.cs

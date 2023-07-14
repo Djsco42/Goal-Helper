@@ -8,11 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="txt\Stored Goals.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="txt\Stored Goals.txt" />
+    <Compile Remove="txt\**" />
+    <EmbeddedResource Remove="txt\**" />
+    <None Remove="txt\**" />
+    <Page Remove="txt\**" />
   </ItemGroup>
 
 </Project>

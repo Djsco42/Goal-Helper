@@ -1,0 +1,23 @@
+Name of Goal: g Date: none Notes: none Priority: none
+
+Name of Goal: d Date: none Notes: none Priority: none
+
+Name of Goal: test Date: none Notes: none Priority: none
+
+Name of Goal: test1 Date: none Notes: none Priority: none
+
+Name of Goal: test 3 Date: none Notes: none Priority: none
+
+Name of Goal: test 4 Date: none Notes: none Priority: none
+
+Name of Goal: Goal App Date: 7/7/2023 Notes: work Priority: 1
+
+Name of Goal: e Date: none Notes: none Priority: none
+
+Name of Goal: ee Date: none Notes: none Priority: none
+
+Name of Goal: f Date: none Notes: none Priority: none
+
+Name of Goal: t Date: none Notes: none Priority: none
+
+Name of Goal: f Date: none Notes: none Priority: none

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Reflection.Metadata;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -31,7 +32,8 @@ namespace GoalWin
         string GNameinfo;
         string GNoteinfo;
         string GPri;
-        string GfilePath = @"C:\Users\djsco\source\repos\Goal Helper\GoalWin\txt\Stored Goals.txt";
+        string GfilePath = @"C:\Users\djsco\source\repos\Goal Helper\GoalWin\Stored Goals.txt";
+        string[] targetWords = { "Name:", "Date:", "Notes:", "Pri:" };
         string content = string.Empty;
 
 
@@ -43,19 +45,6 @@ namespace GoalWin
         public MainWindow()
         {
             InitializeComponent();
-
-
-
-
-
-            List<GList> Goal = new List<GList>();
-
-
-            Goal.Add(new GList { Name = GNameinfo, Date = GDateinfo, Notes = GNoteinfo, Pri=GPri });
-
-
-
-            
 
         }
         public class GList
@@ -96,29 +85,53 @@ namespace GoalWin
                 Gname.Text = "";
                 Gnote.Text = "";
                 Gpry.Text = "";
-                Console.Write("Name of Goal: " + GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo + " Priority: " + GPri);
 
-                //using (StreamWriter sw =File.CreateText($"Stored Goals.txt"))
-                //{
-                 //   sw.WriteLine("test");
-                //}
-                File.WriteAllText(GfilePath, "Your goal content here");
+
+                string[] lines = File.ReadAllLines(GfilePath);
+
+                // Iterate over each line
+                foreach (string line in lines)
+                {
+                    // Iterate over each target word
+                    foreach (string targetWord in targetWords)
+                    {
+                        // Use regular expressions to extract the word next to the target word
+                        Match match = Regex.Match(line, $@"{targetWord}\s+(\w+)");
+
+                        if (match.Success)
+                        {
+                            // Extract the word next to the target word
+                            string extractedWord = match.Groups[1].Value;
+                            Console.WriteLine($"Target Word: {targetWord}, Extracted Word: {extractedWord}");
+                        }
+                    }
+                }
+
+
+                //Clear console for .txt show
+                Console.Clear();
+                //.txt read/write
+                using (StreamWriter sw =new StreamWriter(GfilePath, true))
+                {
+                    sw.WriteLine();
+                    sw.WriteLine("Name of Goal: " + GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo + " Priority: " + GPri);
+                }
 
                 using (StreamReader sr = new StreamReader(GfilePath))
                 {
-                    // Read the contents of the file
                     content = sr.ReadToEnd();
                     Console.WriteLine(content);
                 }
 
-                List<GList> Goal = new List<GList>();
 
+                //sets Goal list
+                List<GList> Goal = new List<GList>();
 
                 Goal.Add(new GList { Name = GNameinfo, Date = GDateinfo, Notes = GNoteinfo, Pri = GPri });
                 Gcurrent.ItemsSource = Goal;
 
 
-
+            //No goal name error
             }
             else
             {
@@ -142,7 +155,7 @@ namespace GoalWin
         private void Gleave(object sender, MouseEventArgs e)
         {
             GInputState.Text = "";
-            ;
+            
         }
     }
 }
