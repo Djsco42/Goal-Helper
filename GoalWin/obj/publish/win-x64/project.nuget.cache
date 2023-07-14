@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "SWlYMpbW0PoRpkrEhM9oxntfqeqku4l259e6AJSjxp2plJBYZLHZJjLBVN3XLtl7ZWPWr25/MPmy/TA43txYXg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\GoalWin\\GoalWin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\djsco\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.18\\microsoft.netcore.app.runtime.win-x64.6.0.18.nupkg.sha512",
+    "C:\\Users\\djsco\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.18\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.18.nupkg.sha512",
+    "C:\\Users\\djsco\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.18\\microsoft.aspnetcore.app.runtime.win-x64.6.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

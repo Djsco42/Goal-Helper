@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,23 +15,56 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Net.Mime.MediaTypeNames;
+using Path = System.IO.Path;
 
 namespace GoalWin
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
     public partial class MainWindow : Window
     {
         string GDateinfo;
         string GNameinfo;
         string GNoteinfo;
         string GPri;
+        string GfilePath = @"C:\Users\djsco\source\repos\Goal Helper\GoalWin\txt\Stored Goals.txt";
+        string content = string.Empty;
+
+
+
+
+
+
+
         public MainWindow()
         {
             InitializeComponent();
-        }
 
+
+
+
+
+            List<GList> Goal = new List<GList>();
+
+
+            Goal.Add(new GList { Name = GNameinfo, Date = GDateinfo, Notes = GNoteinfo, Pri=GPri });
+
+
+
+            
+
+        }
+        public class GList
+        {
+            public string Name { get; set; }
+            public string Date { get; set; }
+            public string Notes { get; set; }
+            public string Pri { get; set; }
+        }
         private void Gsum_Click(object sender, RoutedEventArgs e)
         {
             if (!string.IsNullOrEmpty(Gname.Text))
@@ -62,6 +98,27 @@ namespace GoalWin
                 Gpry.Text = "";
                 Console.Write("Name of Goal: " + GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo + " Priority: " + GPri);
 
+                //using (StreamWriter sw =File.CreateText($"Stored Goals.txt"))
+                //{
+                 //   sw.WriteLine("test");
+                //}
+                File.WriteAllText(GfilePath, "Your goal content here");
+
+                using (StreamReader sr = new StreamReader(GfilePath))
+                {
+                    // Read the contents of the file
+                    content = sr.ReadToEnd();
+                    Console.WriteLine(content);
+                }
+
+                List<GList> Goal = new List<GList>();
+
+
+                Goal.Add(new GList { Name = GNameinfo, Date = GDateinfo, Notes = GNoteinfo, Pri = GPri });
+                Gcurrent.ItemsSource = Goal;
+
+
+
             }
             else
             {
@@ -70,7 +127,7 @@ namespace GoalWin
             }
 
 
-                
+
         }
 
         private void NumericTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
@@ -85,6 +142,7 @@ namespace GoalWin
         private void Gleave(object sender, MouseEventArgs e)
         {
             GInputState.Text = "";
-;        }
+            ;
+        }
     }
 }

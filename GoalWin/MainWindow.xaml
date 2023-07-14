@@ -82,6 +82,15 @@
             </TextBox.Style>
         </TextBox>
         <TextBlock x:Name="GInputState" HorizontalAlignment="Center" Margin="0,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" Height="45" FontSize="15" FontWeight="Bold" TextAlignment="Center"/>
+        <DataGrid x:Name="Gcurrent" Margin="457,0,-516,327" AutoGenerateColumns="False" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name Of Goal" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Finish Date" Binding="{Binding Date }" />
+                <DataGridTextColumn Header="Helpful Notes" Binding="{Binding Notes }" />
+                <DataGridTextColumn Header="Priority" Binding="{Binding Pri }" />
+                
+            </DataGrid.Columns>
+        </DataGrid>
 
     </Grid>
 </Window>

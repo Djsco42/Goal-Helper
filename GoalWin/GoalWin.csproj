@@ -7,4 +7,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="txt\Stored Goals.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="txt\Stored Goals.txt" />
+  </ItemGroup>
+
 </Project>

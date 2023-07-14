@@ -1,0 +1,2 @@
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Release\GoalWin.pdb
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Release\GoalWin.exe

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Goal Helper/1.0.0": {
+        "dependencies": {
+          "GoalWin": "1.0.0"
+        },
+        "runtime": {
+          "Goal Helper.dll": {}
+        }
+      },
+      "GoalWin/1.0.0": {
+        "runtime": {
+          "GoalWin.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Goal Helper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GoalWin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
