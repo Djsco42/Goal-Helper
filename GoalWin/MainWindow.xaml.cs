@@ -33,7 +33,7 @@ namespace GoalWin
         string GNoteinfo;
         string GPri;
         string GfilePath = @"C:\Users\djsco\source\repos\Goal Helper\GoalWin\Stored Goals.txt";
-        string[] targetWords = { "Name:", "Date:", "Notes:", "Pri:" };
+        string[] targetWords = { "Name of Goal:", "Date:", "Notes:", "Priority:" };
         string content = string.Empty;
 
 
@@ -86,34 +86,12 @@ namespace GoalWin
                 Gnote.Text = "";
                 Gpry.Text = "";
 
-
-                string[] lines = File.ReadAllLines(GfilePath);
-
-                // Iterate over each line
-                foreach (string line in lines)
-                {
-                    // Iterate over each target word
-                    foreach (string targetWord in targetWords)
-                    {
-                        // Use regular expressions to extract the word next to the target word
-                        Match match = Regex.Match(line, $@"{targetWord}\s+(\w+)");
-
-                        if (match.Success)
-                        {
-                            // Extract the word next to the target word
-                            string extractedWord = match.Groups[1].Value;
-                            Console.WriteLine($"Target Word: {targetWord}, Extracted Word: {extractedWord}");
-                        }
-                    }
-                }
-
-
                 //Clear console for .txt show
                 Console.Clear();
                 //.txt read/write
                 using (StreamWriter sw =new StreamWriter(GfilePath, true))
                 {
-                    sw.WriteLine();
+                    //sw.WriteLine();
                     sw.WriteLine("Name of Goal: " + GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo + " Priority: " + GPri);
                 }
 
@@ -126,12 +104,30 @@ namespace GoalWin
 
                 //sets Goal list
                 List<GList> Goal = new List<GList>();
+                string[] lines = File.ReadAllLines(GfilePath);
 
-                Goal.Add(new GList { Name = GNameinfo, Date = GDateinfo, Notes = GNoteinfo, Pri = GPri });
+                // Iterate over each line
+                foreach (string line in lines)
+                {
+                    string[] words = Regex.Split(line, @"\b(?:Name of Goal:|Date:|Notes:|Priority:)\s*");
+
+                    if (words.Length >= 5)
+                    {
+                        Goal.Add(new GList
+                        {
+                            Name = "Name of Goal: "+ words[1].Trim(),
+                            Date = "Date: "+words[2].Trim(),
+                            Notes = "Extra Notes: "+words[3].Trim(),
+                            Pri = "Priority: "+words[4].Trim()
+                        });
+                    }
+                }
+
                 Gcurrent.ItemsSource = Goal;
 
 
-            //No goal name error
+
+                //No goal name error
             }
             else
             {
