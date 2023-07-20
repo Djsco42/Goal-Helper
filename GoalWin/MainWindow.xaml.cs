@@ -18,6 +18,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static System.Net.Mime.MediaTypeNames;
 using Path = System.IO.Path;
+using System.Collections.ObjectModel;
+using System.Globalization;
 
 namespace GoalWin
 {
@@ -35,6 +37,10 @@ namespace GoalWin
         string GfilePath = @"C:\Users\djsco\source\repos\Goal Helper\GoalWin\Stored Goals.txt";
         string[] targetWords = { "Name of Goal:", "Date:", "Notes:", "Priority:" };
         string content = string.Empty;
+        ObservableCollection<GList> Goal = new ObservableCollection<GList>();
+        private DateTime lastWriteTime;
+        bool Iscl = false;
+       
 
 
 
@@ -45,7 +51,7 @@ namespace GoalWin
         public MainWindow()
         {
             InitializeComponent();
-
+            Gref();
         }
         public class GList
         {
@@ -58,6 +64,10 @@ namespace GoalWin
         {
             if (!string.IsNullOrEmpty(Gname.Text))
             {
+                
+
+                Iscl = true;
+
                 string numericValue = Gname.Text;
                 GInputState.Text = "Goal Summited";
                 GInputState.Foreground = new SolidColorBrush(Colors.Green);
@@ -101,32 +111,7 @@ namespace GoalWin
                     Console.WriteLine(content);
                 }
 
-
-                //sets Goal list
-                List<GList> Goal = new List<GList>();
-                string[] lines = File.ReadAllLines(GfilePath);
-
-                // Iterate over each line
-                foreach (string line in lines)
-                {
-                    string[] words = Regex.Split(line, @"\b(?:Name of Goal:|Date:|Notes:|Priority:)\s*");
-
-                    if (words.Length >= 5)
-                    {
-                        Goal.Add(new GList
-                        {
-                            Name = "Name of Goal: "+ words[1].Trim(),
-                            Date = "Date: "+words[2].Trim(),
-                            Notes = "Extra Notes: "+words[3].Trim(),
-                            Pri = "Priority: "+words[4].Trim()
-                        });
-                    }
-                }
-
-                Gcurrent.ItemsSource = Goal;
-
-
-
+                Gref();
                 //No goal name error
             }
             else
@@ -152,6 +137,105 @@ namespace GoalWin
         {
             GInputState.Text = "";
             
+        }
+
+        private void Gdel_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+
+            var selectedItems = Gcurrent.SelectedItems.Cast<GList>().ToList();
+
+            // Create a list to store the items to be removed from the Goal list
+            List<GList> itemsToRemove = new List<GList>();
+
+            foreach (var selectedItem in selectedItems)
+            {
+                itemsToRemove.Add(selectedItem);
+            }
+
+            // Remove the items from the Goal list
+            foreach (var item in itemsToRemove)
+            {
+                Goal.Remove(item);
+            }
+
+            // Refresh the ListView
+            Gcurrent.ItemsSource = null;
+            Gcurrent.ItemsSource = Goal;
+            Gref();
+        }
+
+        private void Gref()
+        {
+            Gcurrent.ItemsSource = null;
+            Goal.Clear();
+            //sets Goal list
+            string[] lines = File.ReadAllLines(GfilePath);
+
+                // Iterate over each line
+                foreach (string line in lines)
+                {
+                    string[] words = Regex.Split(line, @"\b(?:Name of Goal:|Date:|Notes:|Priority:)\s*");
+
+                    if (words.Length >= 5)
+                    {
+                        Goal.Add(new GList
+                        {
+                            Name = "Name of Goal: " + words[1].Trim(),
+                            Date = "Date: " + words[2].Trim(),
+                            Notes = "Notes: " + words[3].Trim(),
+                            Pri = "Priority: " + words[4].Trim()
+                        });
+                    }
+                }
+            Gcurrent.ItemsSource = Goal;
+
+            Listtxt();
+
+        }
+
+
+        private bool FileChanged()
+        {
+            DateTime currentWriteTime = File.GetLastWriteTime(GfilePath);
+            if (currentWriteTime != lastWriteTime)
+            {
+                lastWriteTime = currentWriteTime;
+                return true; // File has been changed
+            }
+            return false; // File has not been changed
+        }
+
+        private void Listtxt()
+        {
+            // Open or create the text file for writing
+            using (StreamWriter writer = new StreamWriter(GfilePath))
+            {
+                foreach (var item in Gcurrent.Items)
+                {
+                    // Assuming each item in the ListView is a GList object
+                    if (item is GList listItem)
+                    {
+                        // Concatenate the data from the GList properties into a single line
+                        string line = $"{listItem.Name} {listItem.Date} {listItem.Notes} {listItem.Pri}";
+
+                        // Write the line to the text file
+                        writer.WriteLine(line);
+                    }
+                }
+            }
+        }
+
+        private void Win_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                using(StreamWriter writer = new StreamWriter(GfilePath))
+                {
+                    writer.WriteLine();
+                }
+            }
         }
     }
 }

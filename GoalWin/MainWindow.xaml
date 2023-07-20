@@ -8,7 +8,7 @@
         Title="MainWindow" Height="500" Width="1200" 
         Background="#FFDE7575"
         MinWidth="900"
-        MinHeight="500"
+        MinHeight="550" KeyDown="Win_KeyDown"
         
         >
     <Grid x:Name="Main">
@@ -84,11 +84,11 @@
             <TextBlock x:Name="GInputState" HorizontalAlignment="Center" Margin="0,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" Height="45" FontSize="15" FontWeight="Bold" TextAlignment="Center"/>
         </Grid>
 
-        <Grid Margin="0,36,36,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="361" >
+        <Grid Margin="0,36,36,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="361" Height="436" >
             <Label x:Name="lable" Content="Current Goals" Margin="111,10,111,365" Background="{x:Null}" Foreground="#FF44EB50" FontWeight="Bold" FontSize="20"/>
-            <Rectangle x:Name="rec"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" Height="405" RenderTransformOrigin="0.5,0.5" Width="360"/>
+            <Rectangle x:Name="rec"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30" VerticalAlignment="Center" HorizontalAlignment="Center" Height="436" RenderTransformOrigin="0.5,0.5" Width="360"/>
 
-            <ListView x:Name="Gcurrent" Margin="38,60,38,32" BorderBrush="{x:Null}" Background="#FFD893E3">
+            <ListView x:Name="Gcurrent" Margin="38,60,38,51" BorderBrush="{x:Null}" Background="#FFD893E3">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" >
@@ -96,11 +96,11 @@
                             <TextBlock Text="{Binding Date}" Margin="5"/>
                             <TextBlock Text="{Binding Notes}" Margin="5"/>
                             <TextBlock Text="{Binding Pri}" Margin="5"/>
-                            <!--<CheckBox IsChecked="{Binding IsSelected}" Margin="5"/>-->
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button x:Name="Gdel" Content="Delete Goal" HorizontalAlignment="Center" Margin="0,397,0,0" VerticalAlignment="Top" Background="#FFF72A2A" Foreground="Black" FontWeight="Bold" FontSize="15" Height="29" Width="122" Click="Gdel_Click"/>
         </Grid>
     </Grid>
 </Window>
