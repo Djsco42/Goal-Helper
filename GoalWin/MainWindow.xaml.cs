@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Oh ya MF, Main Ui is done! 7/20/23 10:30AM
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -52,6 +53,8 @@ namespace GoalWin
         {
             InitializeComponent();
             Gref();
+            FileChanged();
+
         }
         public class GList
         {
@@ -96,22 +99,15 @@ namespace GoalWin
                 Gnote.Text = "";
                 Gpry.Text = "";
 
-                //Clear console for .txt show
-                Console.Clear();
                 //.txt read/write
                 using (StreamWriter sw =new StreamWriter(GfilePath, true))
                 {
                     //sw.WriteLine();
                     sw.WriteLine("Name of Goal: " + GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo + " Priority: " + GPri);
                 }
-
-                using (StreamReader sr = new StreamReader(GfilePath))
-                {
-                    content = sr.ReadToEnd();
-                    Console.WriteLine(content);
-                }
-
                 Gref();
+                Listtxt();
+                FileChanged();
                 //No goal name error
             }
             else
@@ -141,9 +137,6 @@ namespace GoalWin
 
         private void Gdel_Click(object sender, RoutedEventArgs e)
         {
-            
-
-
             var selectedItems = Gcurrent.SelectedItems.Cast<GList>().ToList();
 
             // Create a list to store the items to be removed from the Goal list
@@ -162,8 +155,10 @@ namespace GoalWin
 
             // Refresh the ListView
             Gcurrent.ItemsSource = null;
-            Gcurrent.ItemsSource = Goal;
+            Gcurrent.ItemsSource = Goal.OrderBy(item => item.Pri);
+            Listtxt();
             Gref();
+            FileChanged();
         }
 
         private void Gref()
@@ -189,22 +184,30 @@ namespace GoalWin
                         });
                     }
                 }
-            Gcurrent.ItemsSource = Goal;
 
-            Listtxt();
+            Gcurrent.ItemsSource = Goal.OrderBy(item => item.Pri);
+
+
 
         }
 
 
-        private bool FileChanged()
+        private void FileChanged()
         {
             DateTime currentWriteTime = File.GetLastWriteTime(GfilePath);
             if (currentWriteTime != lastWriteTime)
             {
+                //changed
                 lastWriteTime = currentWriteTime;
-                return true; // File has been changed
+                using StreamReader sr = new StreamReader(GfilePath);
+                {
+                    content = sr.ReadToEnd();
+                    Console.Clear();
+                    Console.WriteLine(content);
+                }
+                
             }
-            return false; // File has not been changed
+            // not been changed
         }
 
         private void Listtxt()
@@ -235,6 +238,14 @@ namespace GoalWin
                 {
                     writer.WriteLine();
                 }
+            }
+            if (e.Key == Key.Q) 
+            {
+                Listtxt();
+            }
+            if(e.Key == Key.W)
+            {
+                Gref();
             }
         }
     }
