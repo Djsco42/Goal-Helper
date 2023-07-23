@@ -1,4 +1,2 @@
-Name of Goal: 1 Date: none Notes: none Priority: 1
-Name of Goal: 4 Date: none Notes: none Priority: 2
-Name of Goal: 5 Date: none Notes: none Priority: 2
-Name of Goal: ee Date: none Notes: none Priority: 3
+Name of Goal: 1 Date: none Notes: none Priority: none Session Time: 1 Break Time: 1
+Name of Goal: 1 Date: none Notes: none Priority: none Session Time: 3 Break Time: none

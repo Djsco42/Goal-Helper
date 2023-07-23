@@ -12,77 +12,100 @@
         
         >
     <Grid x:Name="Main">
-        <Grid x:Name="Ggrid" Margin="36,36,0,0" MinHeight="270" MinWidth="200" HorizontalAlignment="Left" VerticalAlignment="Top" Width="242" MouseLeave="Gleave" >
 
-            <DatePicker x:Name="GDate"  Height="30" MinHeight="30" MinWidth="115" Margin="66,119,58,256" Foreground="Black" BorderBrush="{x:Null}"/>
-            <Button x:Name="Gsum" Content="Summit Goal" Margin="56,296,50,79"  BorderBrush="{x:Null}" Background="#FF1DCA5F" FontWeight="Bold" Click="Gsum_Click" Height="30" Width="120" MinHeight="30" MinWidth="120"/>
-            <Label x:Name="Glable" Content="Setting Up A Goal" Margin="13,10,13,350" Background="{x:Null}" Foreground="#FF44EB50" FontWeight="Bold" FontSize="20" Height="45" Width="200"/>
-            <Rectangle x:Name="Grec" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30" Margin="0,0,0,0"/>
-            <TextBox x:Name="Gname" Margin="13,60,13,309" BorderBrush="{x:Null}" FontSize="15" >
-                <TextBox.Style>
-                    <Style TargetType="TextBox">
-                        <Style.Resources>
-                            <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="None">
-                                <VisualBrush.Visual>
-                                    <TextBlock Text="Add A Title To Your Goal" FontStyle="Italic" Foreground="Black" FontSize="18" />
-                                </VisualBrush.Visual>
-                            </VisualBrush>
-                        </Style.Resources>
-                        <Style.Triggers>
-                            <Trigger Property="Text" Value="">
-                                <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
-                            </Trigger>
-                            <Trigger Property="IsKeyboardFocused" Value="True">
-                                <Setter Property="Background" Value="White" />
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </TextBox.Style>
-            </TextBox>
-            <TextBox x:Name="Gnote" Margin="13,166,13,203" BorderBrush="{x:Null}" TextWrapping="Wrap" FontSize="15">
-                <TextBox.Style>
-                    <Style TargetType="TextBox">
-                        <Style.Resources>
-                            <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="none">
-                                <VisualBrush.Visual>
-                                    <TextBlock Text="Extra Notes To Pursue Goal" FontStyle="Italic" Foreground="Black" FontSize="18" TextWrapping="Wrap"/>
-                                </VisualBrush.Visual>
-                            </VisualBrush>
-                        </Style.Resources>
-                        <Style.Triggers>
-                            <Trigger Property="Text" Value="">
-                                <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
-                            </Trigger>
-                            <Trigger Property="IsKeyboardFocused" Value="True">
-                                <Setter Property="Background" Value="White" />
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </TextBox.Style>
-            </TextBox>
-            <TextBox x:Name="Gpry" Margin="13,238,13,131" BorderBrush="{x:Null}" TextWrapping="Wrap" FontSize="15" PreviewTextInput="NumericTextBox_PreviewTextInput">
-                <TextBox.Style>
-                    <Style TargetType="TextBox">
-                        <Style.Resources>
-                            <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="none">
-                                <VisualBrush.Visual>
-                                    <TextBlock Text="Add Goal Priority If Needed" FontStyle="Italic" Foreground="Black" FontSize="18" TextWrapping="Wrap"/>
-                                </VisualBrush.Visual>
-                            </VisualBrush>
-                        </Style.Resources>
-                        <Style.Triggers>
-                            <Trigger Property="Text" Value="">
-                                <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
-                            </Trigger>
-                            <Trigger Property="IsKeyboardFocused" Value="True">
-                                <Setter Property="Background" Value="White" />
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </TextBox.Style>
-            </TextBox>
-            <TextBlock x:Name="GInputState" HorizontalAlignment="Center" Margin="0,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" Height="45" FontSize="15" FontWeight="Bold" TextAlignment="Center"/>
-        </Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="36,36,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Grid x:Name="Ggrid" Margin="0" Width="242" MouseLeave="Gleave" >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+
+
+                <DatePicker x:Name="GDate" Grid.Row="2" VerticalAlignment="Center" Margin="66,10,66,10" Foreground="Black" BorderBrush="{x:Null}"/>
+
+
+                <Button x:Name="Gsum" Content="Summit Goal" Grid.Row="5" Margin="61,15,61,15"  BorderBrush="{x:Null}" Background="#FF1DCA5F" FontWeight="Bold" Click="Gsum_Click" MinHeight="30" MinWidth="120"/>
+
+
+                <Label x:Name="Glable" Grid.Row="0"  VerticalContentAlignment="Top" Content="Setting Up A Goal" Margin="33,13,33,13" Background="{x:Null}" Foreground="#FF44EB50" FontWeight="Bold" FontSize="20"/>
+
+
+                <Rectangle x:Name="Grec"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30" Margin="0,0,0,0" Grid.RowSpan="7"/>
+
+
+                <TextBox x:Name="Gname" Grid.Row="1" Margin="10,11,10,15" BorderBrush="{x:Null}" FontSize="15" VerticalAlignment="Top" TextWrapping="Wrap" >
+                    <TextBox.Style>
+                        <Style TargetType="TextBox">
+                            <Style.Resources>
+                                <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="None">
+                                    <VisualBrush.Visual>
+                                        <TextBlock Text="Add A Title To Your Goal" FontStyle="Italic" Foreground="Black" FontSize="18" />
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </Style.Resources>
+                            <Style.Triggers>
+                                <Trigger Property="Text" Value="">
+                                    <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
+                                </Trigger>
+                                <Trigger Property="IsKeyboardFocused" Value="True">
+                                    <Setter Property="Background" Value="White" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
+                <TextBox x:Name="Gnote" Grid.Row="3" VerticalAlignment="Top" Margin="10,15,10,20" BorderBrush="{x:Null}" TextWrapping="Wrap" FontSize="15">
+                    <TextBox.Style>
+                        <Style TargetType="TextBox">
+                            <Style.Resources>
+                                <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="none">
+                                    <VisualBrush.Visual>
+                                        <TextBlock Text="Extra Notes To Pursue Goal" FontStyle="Italic" Foreground="Black" FontSize="18" TextWrapping="Wrap"/>
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </Style.Resources>
+                            <Style.Triggers>
+                                <Trigger Property="Text" Value="">
+                                    <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
+                                </Trigger>
+                                <Trigger Property="IsKeyboardFocused" Value="True">
+                                    <Setter Property="Background" Value="White" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
+                <TextBox x:Name="Gpry" Grid.Row="4" VerticalAlignment="Top" Margin="10,20,10,17" BorderBrush="{x:Null}" TextWrapping="Wrap" FontSize="15" PreviewTextInput="NumericTextBox_PreviewTextInput">
+                    <TextBox.Style>
+                        <Style TargetType="TextBox">
+                            <Style.Resources>
+                                <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="none">
+                                    <VisualBrush.Visual>
+                                        <TextBlock Text="Add Goal Priority If Needed" FontStyle="Italic" Foreground="Black" FontSize="18" TextWrapping="Wrap"/>
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </Style.Resources>
+                            <Style.Triggers>
+                                <Trigger Property="Text" Value="">
+                                    <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
+                                </Trigger>
+                                <Trigger Property="IsKeyboardFocused" Value="True">
+                                    <Setter Property="Background" Value="White" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
+                <TextBlock x:Name="GInputState" HorizontalAlignment="Center" Grid.Row="6" Margin="10,15,10,15" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" Height="45" FontSize="15" FontWeight="Bold" TextAlignment="Center"/>
+            </Grid>
+        </ScrollViewer>
 
         <Grid Margin="0,36,36,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="361" Height="436" >
             <Label x:Name="lable" Content="Current Goals" Margin="111,10,111,365" Background="{x:Null}" Foreground="#FF44EB50" FontWeight="Bold" FontSize="20"/>
@@ -96,11 +119,60 @@
                             <TextBlock Text="{Binding Date}" Margin="5"/>
                             <TextBlock Text="{Binding Notes}" Margin="5"/>
                             <TextBlock Text="{Binding Pri}" Margin="5"/>
+                            <TextBlock Text="{Binding Session}" Margin="5"/>
+                            <TextBlock Text="{Binding Break}" Margin="5"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
             <Button x:Name="Gdel" Content="Delete Goal" HorizontalAlignment="Center" Margin="0,397,0,0" VerticalAlignment="Top" Background="#FFF72A2A" Foreground="Black" FontWeight="Bold" FontSize="15" Height="29" Width="122" Click="Gdel_Click"/>
+        </Grid>
+
+        <Grid Margin="326,36,632,295">
+            <Rectangle x:Name="trec"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30"/>
+            <TextBox x:Name="Gstime" VerticalAlignment="Top" Margin="10,84,10,0" BorderBrush="{x:Null}" TextWrapping="Wrap" FontSize="15" PreviewTextInput="NumericTextBox_PreviewTextInput">
+                <TextBox.Style>
+                    <Style TargetType="{x:Type TextBox}">
+                        <Style.Resources>
+                            <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="none">
+                                <VisualBrush.Visual>
+                                    <TextBlock Text="Add Goal Work Period" FontStyle="Italic" Foreground="Black" FontSize="18" TextWrapping="Wrap"/>
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Style.Resources>
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="">
+                                <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="Background" Value="White" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+            <TextBlock Text="Setting Up Goal Sessions (Min)" HorizontalAlignment="Center" Margin="0,13,0,13" VerticalAlignment="Top" Foreground="#FF44EB50" FontWeight="Bold" FontSize="20" Height="59" Width="222" TextWrapping="Wrap" TextAlignment="Center"/>
+            <TextBox x:Name="Gbtime" VerticalAlignment="Top" Margin="10,135,10,0" BorderBrush="{x:Null}" TextWrapping="Wrap" FontSize="15" PreviewTextInput="NumericTextBox_PreviewTextInput">
+                <TextBox.Style>
+                    <Style TargetType="{x:Type TextBox}">
+                        <Style.Resources>
+                            <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="none">
+                                <VisualBrush.Visual>
+                                    <TextBlock Text="Add Goal Break Period" FontStyle="Italic" Foreground="Black" FontSize="18" TextWrapping="Wrap"/>
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Style.Resources>
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="">
+                                <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="Background" Value="White" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
         </Grid>
     </Grid>
 </Window>
