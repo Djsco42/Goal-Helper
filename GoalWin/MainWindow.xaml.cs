@@ -37,10 +37,8 @@ namespace GoalWin
         string GNameinfo;
         string GNoteinfo;
         string GPri;
-        string GSTimeinfo;
-        string GBTimeinfo;
         string GfilePath = @"C:\Users\djsco\source\repos\Goal Helper\GoalWin\Stored Goals.txt";
-        string[] targetWords = { "Name of Goal:", "Date:", "Notes:", "Priority:", "Session Time:", "Break Time:" };
+        string[] targetWords = { "Name of Goal:", "Date:", "Notes:", "Priority:" };
         string content = string.Empty;
         ObservableCollection<GList> Goal = new ObservableCollection<GList>();
         private DateTime lastWriteTime;
@@ -66,8 +64,6 @@ namespace GoalWin
             public string Date { get; set; }
             public string Notes { get; set; }
             public string Pri { get; set; }
-            public string Session { get; set; }
-            public string Break { get; set; }
         }
         private void Gsum_Click(object sender, RoutedEventArgs e)
         {
@@ -86,8 +82,6 @@ namespace GoalWin
                 GNameinfo = Gname.Text;
                 GNoteinfo = Gnote.Text;
                 GPri = Gpry.Text;
-                GSTimeinfo = Gstime.Text;
-                GBTimeinfo = Gbtime.Text;
 
 
                 if (string.IsNullOrEmpty(GDate.Text))
@@ -102,26 +96,16 @@ namespace GoalWin
                 {
                     GPri = "none";
                 }
-                if (string.IsNullOrEmpty(Gstime.Text))
-                {
-                    GSTimeinfo = "none";
-                }
-                if (string.IsNullOrEmpty(Gbtime.Text))
-                {
-                    GBTimeinfo = "none";
-                }
                 GDate.Text = "";
                 Gname.Text = "";
                 Gnote.Text = "";
                 Gpry.Text = "";
-                Gstime.Text = "";
-                Gbtime.Text = "";
 
                 //.txt read/write
                 using (StreamWriter sw =new StreamWriter(GfilePath, true))
                 {
                     //sw.WriteLine();
-                    sw.WriteLine("Name of Goal: " + GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo + " Priority: " + GPri+" Session Time:"+GSTimeinfo+" Break Time:"+GBTimeinfo);
+                    sw.WriteLine("Name of Goal: " + GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo + " Priority: " + GPri);
                 }
                 Gref();
                 Listtxt();
@@ -189,18 +173,16 @@ namespace GoalWin
                 // Iterate over each line
                 foreach (string line in lines)
                 {
-                    string[] words = Regex.Split(line, @"\b(?:Name of Goal:|Date:|Notes:|Priority:|Session Time:|Break Time:)\s*");
+                    string[] words = Regex.Split(line, @"\b(?:Name of Goal:|Date:|Notes:|Priority:)\s*");
 
-                    if (words.Length >= 7)
+                    if (words.Length >= 5)
                     {
                         Goal.Add(new GList
                         {
                             Name = "Name of Goal: " + words[1].Trim(),
                             Date = "Date: " + words[2].Trim(),
                             Notes = "Notes: " + words[3].Trim(),
-                            Pri = "Priority: " + words[4].Trim(),
-                            Session = "Session Time: " + words[5].Trim(),
-                            Break = "Break Time: " + words[6].Trim()
+                            Pri = "Priority: " + words[4].Trim()
                         });
                     }
                 }
@@ -241,7 +223,7 @@ namespace GoalWin
                     if (item is GList listItem)
                     {
                         // Concatenate the data from the GList properties into a single line
-                        string line = $"{listItem.Name} {listItem.Date} {listItem.Notes} {listItem.Pri} {listItem.Session} {listItem.Break}";
+                        string line = $"{listItem.Name} {listItem.Date} {listItem.Notes} {listItem.Pri}";
 
                         // Write the line to the text file
                         writer.WriteLine(line);

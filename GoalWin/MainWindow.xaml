@@ -119,60 +119,11 @@
                             <TextBlock Text="{Binding Date}" Margin="5"/>
                             <TextBlock Text="{Binding Notes}" Margin="5"/>
                             <TextBlock Text="{Binding Pri}" Margin="5"/>
-                            <TextBlock Text="{Binding Session}" Margin="5"/>
-                            <TextBlock Text="{Binding Break}" Margin="5"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
             <Button x:Name="Gdel" Content="Delete Goal" HorizontalAlignment="Center" Margin="0,397,0,0" VerticalAlignment="Top" Background="#FFF72A2A" Foreground="Black" FontWeight="Bold" FontSize="15" Height="29" Width="122" Click="Gdel_Click"/>
-        </Grid>
-
-        <Grid Margin="326,36,632,295">
-            <Rectangle x:Name="trec"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30"/>
-            <TextBox x:Name="Gstime" VerticalAlignment="Top" Margin="10,84,10,0" BorderBrush="{x:Null}" TextWrapping="Wrap" FontSize="15" PreviewTextInput="NumericTextBox_PreviewTextInput">
-                <TextBox.Style>
-                    <Style TargetType="{x:Type TextBox}">
-                        <Style.Resources>
-                            <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="none">
-                                <VisualBrush.Visual>
-                                    <TextBlock Text="Add Goal Work Period" FontStyle="Italic" Foreground="Black" FontSize="18" TextWrapping="Wrap"/>
-                                </VisualBrush.Visual>
-                            </VisualBrush>
-                        </Style.Resources>
-                        <Style.Triggers>
-                            <Trigger Property="Text" Value="">
-                                <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
-                            </Trigger>
-                            <Trigger Property="IsKeyboardFocused" Value="True">
-                                <Setter Property="Background" Value="White" />
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </TextBox.Style>
-            </TextBox>
-            <TextBlock Text="Setting Up Goal Sessions (Min)" HorizontalAlignment="Center" Margin="0,13,0,13" VerticalAlignment="Top" Foreground="#FF44EB50" FontWeight="Bold" FontSize="20" Height="59" Width="222" TextWrapping="Wrap" TextAlignment="Center"/>
-            <TextBox x:Name="Gbtime" VerticalAlignment="Top" Margin="10,135,10,0" BorderBrush="{x:Null}" TextWrapping="Wrap" FontSize="15" PreviewTextInput="NumericTextBox_PreviewTextInput">
-                <TextBox.Style>
-                    <Style TargetType="{x:Type TextBox}">
-                        <Style.Resources>
-                            <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="none">
-                                <VisualBrush.Visual>
-                                    <TextBlock Text="Add Goal Break Period" FontStyle="Italic" Foreground="Black" FontSize="18" TextWrapping="Wrap"/>
-                                </VisualBrush.Visual>
-                            </VisualBrush>
-                        </Style.Resources>
-                        <Style.Triggers>
-                            <Trigger Property="Text" Value="">
-                                <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
-                            </Trigger>
-                            <Trigger Property="IsKeyboardFocused" Value="True">
-                                <Setter Property="Background" Value="White" />
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </TextBox.Style>
-            </TextBox>
         </Grid>
     </Grid>
 </Window>

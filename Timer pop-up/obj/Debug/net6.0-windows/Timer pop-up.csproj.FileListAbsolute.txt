@@ -1,0 +1,21 @@
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Timer pop-up.exe
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Timer pop-up.deps.json
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Timer pop-up.runtimeconfig.json
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Timer pop-up.dll
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Timer pop-up.pdb
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.csproj.AssemblyReference.cache
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up_MarkupCompile.cache
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up_MarkupCompile.lref
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.g.resources
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.AssemblyInfoInputs.cache
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.AssemblyInfo.cs
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.csproj.CoreCompileInputs.cache
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.dll
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\refint\Timer pop-up.dll
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.pdb
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.genruntimeconfig.cache
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\ref\Timer pop-up.dll
