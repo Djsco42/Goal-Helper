@@ -119,11 +119,65 @@
                             <TextBlock Text="{Binding Date}" Margin="5"/>
                             <TextBlock Text="{Binding Notes}" Margin="5"/>
                             <TextBlock Text="{Binding Pri}" Margin="5"/>
+                            <TextBlock Text="{Binding Session}" Margin="5"/>
+                            <TextBlock Text="{Binding Break}" Margin="5"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
             <Button x:Name="Gdel" Content="Delete Goal" HorizontalAlignment="Center" Margin="0,397,0,0" VerticalAlignment="Top" Background="#FFF72A2A" Foreground="Black" FontWeight="Bold" FontSize="15" Height="29" Width="122" Click="Gdel_Click"/>
         </Grid>
+        <Grid x:Name="time" Margin="328,36,630,0" VerticalAlignment="Top" Height="146">
+            <Rectangle x:Name="trec"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30" Margin="0,0,0,0" />
+
+            <TextBlock x:Name="tlabel" Text="Set Work Sessions And Breaks (Min)" Background="{x:Null}" Foreground="#FF44EB50" FontWeight="Bold" FontSize="20" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="55"  Margin="16,10,16,0"/>
+
+            <TextBox x:Name="Gsession" Margin="10,0,10,52" BorderBrush="{x:Null}" FontSize="15" VerticalAlignment="Bottom" TextWrapping="Wrap" PreviewTextInput="NumericTextBox_PreviewTextInput">
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Style.Resources>
+                            <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="None">
+                                <VisualBrush.Visual>
+                                    <TextBlock Text="Add Work Session Time" FontStyle="Italic" Foreground="Black" FontSize="18" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Style.Resources>
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="">
+                                <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="Background" Value="White" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+
+            <TextBox x:Name="Gbreak" Margin="16,111,16,0" BorderBrush="{x:Null}" FontSize="15" VerticalAlignment="Top" TextWrapping="Wrap" PreviewTextInput="NumericTextBox_PreviewTextInput" Height="25">
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Style.Resources>
+                            <VisualBrush x:Key="WatermarkBrush" Opacity="0.5" Stretch="None">
+                                <VisualBrush.Visual>
+                                    <TextBlock Text="Add Break Time" FontStyle="Italic" Foreground="Black" FontSize="18" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Style.Resources>
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="">
+                                <Setter Property="Background" Value="{StaticResource WatermarkBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="Background" Value="White" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+        </Grid>
     </Grid>
+
+
+
 </Window>
