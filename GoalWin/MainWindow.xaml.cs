@@ -37,8 +37,10 @@ namespace GoalWin
         string GNameinfo;
         string GNoteinfo;
         string GPri;
+        string GSessioninfo;
+        string GBreakinfo;
         string GfilePath = @"C:\Users\djsco\source\repos\Goal Helper\GoalWin\Stored Goals.txt";
-        string[] targetWords = { "Name of Goal:", "Date:", "Notes:", "Priority:" };
+        string[] targetWords = { "Name of Goal:", "Date:", "Notes:", "Priority:", "Session:", "Break:" };
         string content = string.Empty;
         ObservableCollection<GList> Goal = new ObservableCollection<GList>();
         private DateTime lastWriteTime;
@@ -64,6 +66,8 @@ namespace GoalWin
             public string Date { get; set; }
             public string Notes { get; set; }
             public string Pri { get; set; }
+            public string Session { get; set; }
+            public string Break { get; set; }
         }
         private void Gsum_Click(object sender, RoutedEventArgs e)
         {
@@ -82,6 +86,8 @@ namespace GoalWin
                 GNameinfo = Gname.Text;
                 GNoteinfo = Gnote.Text;
                 GPri = Gpry.Text;
+                GSessioninfo = Gsession.Text;
+                GBreakinfo = Gbreak.Text;
 
 
                 if (string.IsNullOrEmpty(GDate.Text))
@@ -96,16 +102,26 @@ namespace GoalWin
                 {
                     GPri = "none";
                 }
+                if (string.IsNullOrEmpty(Gsession.Text))
+                {
+                    GSessioninfo = "none";
+                }
+                if (string.IsNullOrEmpty(Gbreak.Text))
+                {
+                    GBreakinfo = "none";
+                }
                 GDate.Text = "";
                 Gname.Text = "";
                 Gnote.Text = "";
                 Gpry.Text = "";
+                Gsession.Text = "";
+                Gbreak.Text = "";
 
                 //.txt read/write
                 using (StreamWriter sw =new StreamWriter(GfilePath, true))
                 {
                     //sw.WriteLine();
-                    sw.WriteLine("Name of Goal: " + GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo + " Priority: " + GPri);
+                    sw.WriteLine("Name of Goal: " + GNameinfo + " Date: " + GDateinfo + " Notes: " + GNoteinfo + " Priority: " + GPri +" Session:" +GSessioninfo+" Break:"+GBreakinfo);
                 }
                 Gref();
                 Listtxt();
@@ -173,16 +189,18 @@ namespace GoalWin
                 // Iterate over each line
                 foreach (string line in lines)
                 {
-                    string[] words = Regex.Split(line, @"\b(?:Name of Goal:|Date:|Notes:|Priority:)\s*");
+                    string[] words = Regex.Split(line, @"\b(?:Name of Goal:|Date:|Notes:|Priority:|Session:|Break:)\s*");
 
-                    if (words.Length >= 5)
+                    if (words.Length >= 7)
                     {
                         Goal.Add(new GList
                         {
                             Name = "Name of Goal: " + words[1].Trim(),
                             Date = "Date: " + words[2].Trim(),
                             Notes = "Notes: " + words[3].Trim(),
-                            Pri = "Priority: " + words[4].Trim()
+                            Pri = "Priority: " + words[4].Trim(),
+                            Session = "Session: " + words[5].Trim(),
+                            Break = "Break: " + words[6].Trim()
                         });
                     }
                 }
@@ -223,7 +241,7 @@ namespace GoalWin
                     if (item is GList listItem)
                     {
                         // Concatenate the data from the GList properties into a single line
-                        string line = $"{listItem.Name} {listItem.Date} {listItem.Notes} {listItem.Pri}";
+                        string line = $"{listItem.Name} {listItem.Date} {listItem.Notes} {listItem.Pri} {listItem.Session} {listItem.Break}";
 
                         // Write the line to the text file
                         writer.WriteLine(line);
