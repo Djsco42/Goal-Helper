@@ -40,3 +40,30 @@ D:\Toolkit\Backup\THE_TERMINATOR\c\Users\djsco\source\repos\Goal Helper\GoalWin\
 D:\Toolkit\Backup\THE_TERMINATOR\c\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\GoalWin.pdb
 D:\Toolkit\Backup\THE_TERMINATOR\c\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\GoalWin.genruntimeconfig.cache
 D:\Toolkit\Backup\THE_TERMINATOR\c\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\ref\GoalWin.dll
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\bin\Debug\net6.0-windows\GoalWin.exe
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\bin\Debug\net6.0-windows\GoalWin.deps.json
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\bin\Debug\net6.0-windows\GoalWin.runtimeconfig.json
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\bin\Debug\net6.0-windows\GoalWin.dll
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\bin\Debug\net6.0-windows\GoalWin.pdb
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\bin\Debug\net6.0-windows\Shared_Info.dll
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\bin\Debug\net6.0-windows\Shared_Info.pdb
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\GoalWin.csproj.AssemblyReference.cache
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\GoalWin_MarkupCompile.cache
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\GoalWin_MarkupCompile.lref
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\GoalWin.g.resources
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\GoalWin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\GoalWin.AssemblyInfoInputs.cache
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\GoalWin.AssemblyInfo.cs
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\GoalWin.csproj.CoreCompileInputs.cache
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\GoalWin.csproj.CopyComplete
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\GoalWin.dll
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\refint\GoalWin.dll
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\GoalWin.pdb
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\GoalWin.genruntimeconfig.cache
+C:\Users\djsco\OneDrive\Desktop\hope\GoalWin\obj\Debug\net6.0-windows\ref\GoalWin.dll
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Debug\net6.0-windows\Shared_Info.dll
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Debug\net6.0-windows\Shared_Info.pdb
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\GoalWin.csproj.CopyComplete

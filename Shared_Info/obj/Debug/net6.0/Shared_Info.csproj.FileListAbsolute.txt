@@ -1,0 +1,24 @@
+C:\Users\djsco\OneDrive\Desktop\hope\Shared_Info\bin\Debug\net6.0\Shared_Info.deps.json
+C:\Users\djsco\OneDrive\Desktop\hope\Shared_Info\bin\Debug\net6.0\Shared_Info.dll
+C:\Users\djsco\OneDrive\Desktop\hope\Shared_Info\bin\Debug\net6.0\Shared_Info.pdb
+C:\Users\djsco\OneDrive\Desktop\hope\Shared_Info\obj\Debug\net6.0\Shared_Info.csproj.AssemblyReference.cache
+C:\Users\djsco\OneDrive\Desktop\hope\Shared_Info\obj\Debug\net6.0\Shared_Info.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djsco\OneDrive\Desktop\hope\Shared_Info\obj\Debug\net6.0\Shared_Info.AssemblyInfoInputs.cache
+C:\Users\djsco\OneDrive\Desktop\hope\Shared_Info\obj\Debug\net6.0\Shared_Info.AssemblyInfo.cs
+C:\Users\djsco\OneDrive\Desktop\hope\Shared_Info\obj\Debug\net6.0\Shared_Info.csproj.CoreCompileInputs.cache
+C:\Users\djsco\OneDrive\Desktop\hope\Shared_Info\obj\Debug\net6.0\Shared_Info.dll
+C:\Users\djsco\OneDrive\Desktop\hope\Shared_Info\obj\Debug\net6.0\refint\Shared_Info.dll
+C:\Users\djsco\OneDrive\Desktop\hope\Shared_Info\obj\Debug\net6.0\Shared_Info.pdb
+C:\Users\djsco\OneDrive\Desktop\hope\Shared_Info\obj\Debug\net6.0\ref\Shared_Info.dll
+C:\Users\djsco\source\repos\Goal Helper\Shared_Info\bin\Debug\net6.0\Shared_Info.deps.json
+C:\Users\djsco\source\repos\Goal Helper\Shared_Info\bin\Debug\net6.0\Shared_Info.dll
+C:\Users\djsco\source\repos\Goal Helper\Shared_Info\bin\Debug\net6.0\Shared_Info.pdb
+C:\Users\djsco\source\repos\Goal Helper\Shared_Info\obj\Debug\net6.0\Shared_Info.csproj.AssemblyReference.cache
+C:\Users\djsco\source\repos\Goal Helper\Shared_Info\obj\Debug\net6.0\Shared_Info.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djsco\source\repos\Goal Helper\Shared_Info\obj\Debug\net6.0\Shared_Info.AssemblyInfoInputs.cache
+C:\Users\djsco\source\repos\Goal Helper\Shared_Info\obj\Debug\net6.0\Shared_Info.AssemblyInfo.cs
+C:\Users\djsco\source\repos\Goal Helper\Shared_Info\obj\Debug\net6.0\Shared_Info.csproj.CoreCompileInputs.cache
+C:\Users\djsco\source\repos\Goal Helper\Shared_Info\obj\Debug\net6.0\Shared_Info.dll
+C:\Users\djsco\source\repos\Goal Helper\Shared_Info\obj\Debug\net6.0\refint\Shared_Info.dll
+C:\Users\djsco\source\repos\Goal Helper\Shared_Info\obj\Debug\net6.0\Shared_Info.pdb
+C:\Users\djsco\source\repos\Goal Helper\Shared_Info\obj\Debug\net6.0\ref\Shared_Info.dll

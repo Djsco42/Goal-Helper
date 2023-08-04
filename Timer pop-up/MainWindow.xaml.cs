@@ -98,7 +98,7 @@ namespace Timer_pop_up
                 if (data != null)
                 {
                     // Do something with the received data
-                    send.Text = "Received: " + data.LibSess + data.LibBreak;
+                    //send.Text = "Received: " + data.LibSess + data.LibBreak;
                     // Update your UI or perform any other actio
                 }
             }

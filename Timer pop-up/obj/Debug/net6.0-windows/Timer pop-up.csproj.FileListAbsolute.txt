@@ -19,3 +19,50 @@ C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\re
 C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.pdb
 C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.genruntimeconfig.cache
 C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\ref\Timer pop-up.dll
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.csproj.AssemblyReference.cache
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up_MarkupCompile.cache
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up_MarkupCompile.lref
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.dll
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\refint\Timer pop-up.dll
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.pdb
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\Goal Helper.deps.json
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\Goal Helper.runtimeconfig.json
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\GoalWin.deps.json
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\GoalWin.runtimeconfig.json
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\GoalWin.exe
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\Goal Helper.exe
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\Timer pop-up.exe
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\Timer pop-up.deps.json
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\Timer pop-up.runtimeconfig.json
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\Timer pop-up.dll
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\Timer pop-up.pdb
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\Goal Helper.dll
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\GoalWin.dll
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\Shared_Info.dll
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\Goal Helper.pdb
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\GoalWin.pdb
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\bin\Debug\net6.0-windows\Shared_Info.pdb
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.g.resources
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.AssemblyInfoInputs.cache
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.AssemblyInfo.cs
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.csproj.CoreCompileInputs.cache
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.csproj.CopyComplete
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.genruntimeconfig.cache
+C:\Users\djsco\OneDrive\Desktop\hope\Timer pop-up\obj\Debug\net6.0-windows\ref\Timer pop-up.dll
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Goal Helper.deps.json
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Goal Helper.runtimeconfig.json
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\GoalWin.deps.json
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\GoalWin.runtimeconfig.json
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\GoalWin.exe
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Goal Helper.exe
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Goal Helper.dll
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\GoalWin.dll
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Shared_Info.dll
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Goal Helper.pdb
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\GoalWin.pdb
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Shared_Info.pdb
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.csproj.CopyComplete
