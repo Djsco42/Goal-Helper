@@ -1,11 +1,71 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "Goal Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "GoalWin": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Goal Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Goal Helper.dll": {}
+        }
+      },
+      "GoalWin/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Shared_Info": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GoalWin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GoalWin.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "Shared_Info/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Shared_Info.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared_Info.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Goal Helper/1.0.0": {
+      "type": "project",
+      "path": "../Goal Helper/Goal Helper.csproj",
+      "msbuildProject": "../Goal Helper/Goal Helper.csproj"
+    },
+    "GoalWin/1.0.0": {
+      "type": "project",
+      "path": "../GoalWin/GoalWin.csproj",
+      "msbuildProject": "../GoalWin/GoalWin.csproj"
+    },
+    "Shared_Info/1.0.0": {
+      "type": "project",
+      "path": "../Shared_Info/Shared_Info.csproj",
+      "msbuildProject": "../Shared_Info/Shared_Info.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "Goal Helper >= 1.0.0",
+      "GoalWin >= 1.0.0",
+      "Shared_Info >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\djsco\\.nuget\\packages\\": {},
@@ -38,7 +98,17 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Goal Helper\\Goal Helper.csproj": {
+              "projectPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Goal Helper\\Goal Helper.csproj"
+            },
+            "C:\\Users\\djsco\\source\\repos\\Goal Helper\\GoalWin\\GoalWin.csproj": {
+              "projectPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\GoalWin\\GoalWin.csproj"
+            },
+            "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Shared_Info\\Shared_Info.csproj": {
+              "projectPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Shared_Info\\Shared_Info.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
