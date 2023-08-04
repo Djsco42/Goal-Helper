@@ -19,6 +19,7 @@ using Shared_Info;
 using System.Reflection;
 using Shared_Info;
 using static GoalWin.MainWindow;
+using GoalWin;
 
 namespace Timer_pop_up
 {
@@ -31,7 +32,11 @@ namespace Timer_pop_up
         private TimeSpan timer1Duration = TimeSpan.FromMinutes(1); // Timer 1 duration in seconds
         private TimeSpan timer2Duration = TimeSpan.FromMinutes(1); // Timer 2 duration in seconds
         private int currentState = 1;
-        public MainWindow()
+
+        private MainWindow senderViewModel;
+
+        private SessBreakTimes currentData;
+        public MainWindow(SenderViewModel senderViewModel)
         {
             InitializeComponent();
             mainTimer = new DispatcherTimer();
@@ -42,6 +47,13 @@ namespace Timer_pop_up
             timer2TextBlock.Text = $"Timer 2: {timer2Duration:mm\\:ss}";
             timer1Duration = TimeSpan.FromMinutes(1);
             timer1TextBlock.Text = $"Timer 1: {timer1Duration:mm\\:ss}";
+
+            // Subscribe to the event to handle data updates
+
+            this.senderViewModel = senderViewModel;
+            this.senderViewModel.DataUpdated += OnDataUpdated;
+
+
 
         }
 
@@ -82,26 +94,18 @@ namespace Timer_pop_up
             }
         }
 
-        public class Receiver
+        private void OnDataUpdated(object sender, SessBreakTimes data)
         {
-            private Sender sender;
 
-            public Receiver(Sender sender)
+            // Check if data is not null and handle the update
+            if (data != null)
             {
-                this.sender = sender;
-                this.sender.DataUpdated += OnDataUpdated;
-            }
+                // Do something with the received data
+                // For example, update the properties bound to the UI elements
 
-            private void OnDataUpdated(object sender, SessBreakTimes data)
-            {
-                // Check if data is not null and handle the update
-                if (data != null)
-                {
-                    // Do something with the received data
-                    //send.Text = "Received: " + data.LibSess + data.LibBreak;
-                    // Update your UI or perform any other actio
-                }
+                pepe.Text = data.LibSess + data.LibBreak;
             }
         }
+
     }
 }

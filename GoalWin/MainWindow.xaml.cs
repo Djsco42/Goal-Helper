@@ -47,13 +47,12 @@ namespace GoalWin
         private DateTime lastWriteTime;
         bool Iscl = false;
 
-        private string LibSess;
-        private string LibBreak;
+        private string FSess;
+        private string FBreak;
 
         public event EventHandler<SessBreakTimes> DataUpdated;
 
         private SessBreakTimes SBTimes = new SessBreakTimes();
-
 
 
 
@@ -210,8 +209,8 @@ namespace GoalWin
                             Session = "Session: " + words[5].Trim(),
                             Break = "Break: " + words[6].Trim()
                         });
-                    //Sess = words[5].Trim();
-                    //PipBreak = words[6].Trim();
+                    FSess = words[5].Trim();
+                    FBreak = words[6].Trim();
 
 
                     }
@@ -285,30 +284,27 @@ namespace GoalWin
             }
             if(e.Key== Key.S)
             {
-
+                var senderViewModel = new MainWindow();
+                senderViewModel.UpdateStrings("First string", "Second string");
             }
         }
 
 
-        public class Sender
+
+
+        public void UpdateStrings(string string1, string string2)
         {
+            SBTimes.LibSess = string1;
+            SBTimes.LibBreak = string2;
+            OnDataUpdated(SBTimes);
+        }
 
-            public event EventHandler<SessBreakTimes> DataUpdated;
 
-            private SessBreakTimes SBTimes = new SessBreakTimes();
-
-            public void UpdateMyVariable(string Sess, string Brea)
-            {
-                SBTimes.LibSess = Sess;
-                SBTimes.LibSess = Brea;
-                OnDataUpdated(SBTimes);
-            }
-
-            protected virtual void OnDataUpdated(SessBreakTimes data)
+        protected virtual void OnDataUpdated(SessBreakTimes data)
             {
                 DataUpdated?.Invoke(this, data);
             }
-        }
+        
     }
 
 }
