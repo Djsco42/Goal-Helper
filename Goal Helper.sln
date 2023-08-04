@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoalWin", "GoalWin\GoalWin.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Timer pop-up", "Timer pop-up\Timer pop-up.csproj", "{0203BFC3-4BA1-4145-9BC3-172E653F8D05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared_Info", "Shared_Info\Shared_Info.csproj", "{A49A6DC4-EB86-478B-B942-F20F0536D64C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0203BFC3-4BA1-4145-9BC3-172E653F8D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0203BFC3-4BA1-4145-9BC3-172E653F8D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0203BFC3-4BA1-4145-9BC3-172E653F8D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A49A6DC4-EB86-478B-B942-F20F0536D64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A49A6DC4-EB86-478B-B942-F20F0536D64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A49A6DC4-EB86-478B-B942-F20F0536D64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A49A6DC4-EB86-478B-B942-F20F0536D64C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

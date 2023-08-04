@@ -14,4 +14,8 @@
     <Page Remove="txt\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Shared_Info\Shared_Info.csproj" />
+  </ItemGroup>
+
 </Project>

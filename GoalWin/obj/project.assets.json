@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "Shared_Info/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Shared_Info.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared_Info.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Shared_Info/1.0.0": {
+      "type": "project",
+      "path": "../Shared_Info/Shared_Info.csproj",
+      "msbuildProject": "../Shared_Info/Shared_Info.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "Shared_Info >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\djsco\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Shared_Info\\Shared_Info.csproj": {
+              "projectPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Shared_Info\\Shared_Info.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

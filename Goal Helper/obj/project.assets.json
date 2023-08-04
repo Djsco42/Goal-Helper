@@ -5,6 +5,9 @@
       "GoalWin/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Shared_Info": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/GoalWin.dll": {}
         },
@@ -14,6 +17,16 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "Shared_Info/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Shared_Info.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared_Info.dll": {}
+        }
       }
     }
   },
@@ -22,6 +35,11 @@
       "type": "project",
       "path": "../GoalWin/GoalWin.csproj",
       "msbuildProject": "../GoalWin/GoalWin.csproj"
+    },
+    "Shared_Info/1.0.0": {
+      "type": "project",
+      "path": "../Shared_Info/Shared_Info.csproj",
+      "msbuildProject": "../Shared_Info/Shared_Info.csproj"
     }
   },
   "projectFileDependencyGroups": {

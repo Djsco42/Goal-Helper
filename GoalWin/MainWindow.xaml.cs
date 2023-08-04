@@ -23,6 +23,7 @@ using System.Collections.ObjectModel;
 using System.Globalization;
 using System.IO.Pipes;
 using System.Diagnostics;
+using Shared_Info;
 
 namespace GoalWin
 {
@@ -45,7 +46,14 @@ namespace GoalWin
         ObservableCollection<GList> Goal = new ObservableCollection<GList>();
         private DateTime lastWriteTime;
         bool Iscl = false;
-       
+
+        private string LibSess;
+        private string LibBreak;
+
+        public event EventHandler<SessBreakTimes> DataUpdated;
+
+        private SessBreakTimes SBTimes = new SessBreakTimes();
+
 
 
 
@@ -202,6 +210,10 @@ namespace GoalWin
                             Session = "Session: " + words[5].Trim(),
                             Break = "Break: " + words[6].Trim()
                         });
+                    //Sess = words[5].Trim();
+                    //PipBreak = words[6].Trim();
+
+
                     }
                 }
 
@@ -271,6 +283,35 @@ namespace GoalWin
             {
                 Process.GetCurrentProcess().CloseMainWindow();
             }
+            if(e.Key== Key.S)
+            {
+
+            }
+        }
+
+
+        public class Sender
+        {
+
+            public event EventHandler<SessBreakTimes> DataUpdated;
+
+            private SessBreakTimes SBTimes = new SessBreakTimes();
+
+            public void UpdateMyVariable(string Sess, string Brea)
+            {
+                SBTimes.LibSess = Sess;
+                SBTimes.LibSess = Brea;
+                OnDataUpdated(SBTimes);
+            }
+
+            protected virtual void OnDataUpdated(SessBreakTimes data)
+            {
+                DataUpdated?.Invoke(this, data);
+            }
         }
     }
+
 }
+
+
+
