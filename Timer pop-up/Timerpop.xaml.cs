@@ -17,7 +17,6 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 using Shared_Info;
 using System.Reflection;
-using Shared_Info;
 using static GoalWin.Win;
 using GoalWin;
 
@@ -26,17 +25,17 @@ namespace Timer_pop_up
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Timerpop : Window
     {
         private DispatcherTimer mainTimer;
         private TimeSpan timer1Duration = TimeSpan.FromMinutes(1); // Timer 1 duration in seconds
         private TimeSpan timer2Duration = TimeSpan.FromMinutes(1); // Timer 2 duration in seconds
         private int currentState = 1;
 
-        private MainWindow senderViewModel;
+        private Win senderViewModel;
 
         private SessBreakTimes currentData;
-        public MainWindow()
+        public Timerpop()
         {
             InitializeComponent();
             mainTimer = new DispatcherTimer();

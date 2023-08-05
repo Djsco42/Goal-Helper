@@ -50,11 +50,11 @@ C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Go
 C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\GoalWin.pdb
 C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\bin\Debug\net6.0-windows\Shared_Info.pdb
 C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.csproj.AssemblyReference.cache
-C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timerpop.g.cs
 C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up_MarkupCompile.cache
 C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up_MarkupCompile.lref
-C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timerpop.baml
 C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.g.resources
 C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\djsco\source\repos\Goal Helper\Timer pop-up\obj\Debug\net6.0-windows\Timer pop-up.AssemblyInfoInputs.cache
