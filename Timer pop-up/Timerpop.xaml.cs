@@ -32,9 +32,6 @@ namespace Timer_pop_up
         private TimeSpan timer2Duration = TimeSpan.FromMinutes(1); // Timer 2 duration in seconds
         private int currentState = 1;
 
-        private Win senderViewModel;
-
-        private SessBreakTimes currentData;
         public Timerpop()
         {
             InitializeComponent();
@@ -46,12 +43,6 @@ namespace Timer_pop_up
             timer2TextBlock.Text = $"Timer 2: {timer2Duration:mm\\:ss}";
             timer1Duration = TimeSpan.FromMinutes(1);
             timer1TextBlock.Text = $"Timer 1: {timer1Duration:mm\\:ss}";
-
-            // Subscribe to the event to handle data updates
-
-            //this.senderViewModel = senderViewModel;
-            //this.senderViewModel.DataUpdated += OnDataUpdated;
-
 
 
         }
@@ -92,19 +83,5 @@ namespace Timer_pop_up
                 }
             }
         }
-
-        private void OnDataUpdated(object sender, SessBreakTimes data)
-        {
-
-            // Check if data is not null and handle the update
-            if (data != null)
-            {
-                // Do something with the received data
-                // For example, update the properties bound to the UI elements
-
-                pepe.Text = data.LibSess + data.LibBreak;
-            }
-        }
-
     }
 }

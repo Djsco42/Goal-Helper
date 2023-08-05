@@ -284,26 +284,9 @@ namespace GoalWin
             }
             if(e.Key== Key.S)
             {
-                var senderViewModel = new Win();
-                senderViewModel.UpdateStrings("First string", "Second string");
+
             }
         }
-
-
-
-
-        public void UpdateStrings(string string1, string string2)
-        {
-            SBTimes.LibSess = string1;
-            SBTimes.LibBreak = string2;
-            OnDataUpdated(SBTimes);
-        }
-
-
-        protected virtual void OnDataUpdated(SessBreakTimes data)
-            {
-                DataUpdated?.Invoke(this, data);
-            }
         
     }
 
