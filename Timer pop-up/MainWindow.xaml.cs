@@ -18,7 +18,7 @@ using System.Windows.Threading;
 using Shared_Info;
 using System.Reflection;
 using Shared_Info;
-using static GoalWin.MainWindow;
+using static GoalWin.Win;
 using GoalWin;
 
 namespace Timer_pop_up
@@ -36,7 +36,7 @@ namespace Timer_pop_up
         private MainWindow senderViewModel;
 
         private SessBreakTimes currentData;
-        public MainWindow(SenderViewModel senderViewModel)
+        public MainWindow()
         {
             InitializeComponent();
             mainTimer = new DispatcherTimer();
@@ -50,8 +50,8 @@ namespace Timer_pop_up
 
             // Subscribe to the event to handle data updates
 
-            this.senderViewModel = senderViewModel;
-            this.senderViewModel.DataUpdated += OnDataUpdated;
+            //this.senderViewModel = senderViewModel;
+            //this.senderViewModel.DataUpdated += OnDataUpdated;
 
 
 

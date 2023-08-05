@@ -1,0 +1,268 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Timer pop-up\\Timer pop-up.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Goal Helper\\Goal Helper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Goal Helper\\Goal Helper.csproj",
+        "projectName": "Goal Helper",
+        "projectPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Goal Helper\\Goal Helper.csproj",
+        "packagesPath": "C:\\Users\\djsco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Goal Helper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\djsco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\djsco\\source\\repos\\Goal Helper\\GoalWin\\GoalWin.csproj": {
+                "projectPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\GoalWin\\GoalWin.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\djsco\\source\\repos\\Goal Helper\\GoalWin\\GoalWin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\GoalWin\\GoalWin.csproj",
+        "projectName": "GoalWin",
+        "projectPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\GoalWin\\GoalWin.csproj",
+        "packagesPath": "C:\\Users\\djsco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\GoalWin\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\djsco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Shared_Info\\Shared_Info.csproj": {
+                "projectPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Shared_Info\\Shared_Info.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Shared_Info\\Shared_Info.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Shared_Info\\Shared_Info.csproj",
+        "projectName": "Shared_Info",
+        "projectPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Shared_Info\\Shared_Info.csproj",
+        "packagesPath": "C:\\Users\\djsco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Shared_Info\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\djsco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Timer pop-up\\Timer pop-up.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Timer pop-up\\Timer pop-up.csproj",
+        "projectName": "Timer pop-up",
+        "projectPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Timer pop-up\\Timer pop-up.csproj",
+        "packagesPath": "C:\\Users\\djsco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Timer pop-up\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\djsco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Goal Helper\\Goal Helper.csproj": {
+                "projectPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Goal Helper\\Goal Helper.csproj"
+              },
+              "C:\\Users\\djsco\\source\\repos\\Goal Helper\\GoalWin\\GoalWin.csproj": {
+                "projectPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\GoalWin\\GoalWin.csproj"
+              },
+              "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Shared_Info\\Shared_Info.csproj": {
+                "projectPath": "C:\\Users\\djsco\\source\\repos\\Goal Helper\\Shared_Info\\Shared_Info.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

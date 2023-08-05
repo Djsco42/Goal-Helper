@@ -1,24 +1,3 @@
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.deps.json
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.runtimeconfig.json
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.exe
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Goal Helper.exe
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Goal Helper.deps.json
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Goal Helper.runtimeconfig.json
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Goal Helper.dll
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Goal Helper.pdb
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.dll
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.pdb
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.csproj.AssemblyReference.cache
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.AssemblyInfoInputs.cache
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.AssemblyInfo.cs
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.csproj.CoreCompileInputs.cache
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.csproj.CopyComplete
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.dll
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\refint\Goal Helper.dll
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.pdb
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.genruntimeconfig.cache
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\ref\Goal Helper.dll
 D:\Toolkit\Backup\THE_TERMINATOR\c\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.deps.json
 D:\Toolkit\Backup\THE_TERMINATOR\c\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.runtimeconfig.json
 D:\Toolkit\Backup\THE_TERMINATOR\c\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.exe
@@ -63,5 +42,26 @@ C:\Users\djsco\OneDrive\Desktop\hope\Goal Helper\obj\Debug\net6.0-windows\refint
 C:\Users\djsco\OneDrive\Desktop\hope\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.pdb
 C:\Users\djsco\OneDrive\Desktop\hope\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.genruntimeconfig.cache
 C:\Users\djsco\OneDrive\Desktop\hope\Goal Helper\obj\Debug\net6.0-windows\ref\Goal Helper.dll
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.deps.json
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.runtimeconfig.json
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.exe
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Goal Helper.exe
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Goal Helper.deps.json
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Goal Helper.runtimeconfig.json
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Goal Helper.dll
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Goal Helper.pdb
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.dll
 C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Shared_Info.dll
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.pdb
 C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Shared_Info.pdb
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.csproj.AssemblyReference.cache
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.AssemblyInfoInputs.cache
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.AssemblyInfo.cs
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.csproj.CoreCompileInputs.cache
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.csproj.CopyComplete
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.dll
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\refint\Goal Helper.dll
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.pdb
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.genruntimeconfig.cache
+C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\ref\Goal Helper.dll

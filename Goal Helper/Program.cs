@@ -10,7 +10,7 @@
             Thread thread = new Thread(() =>
             {
                 var app = new System.Windows.Application();
-                var mainWindow = new GoalWin.MainWindow(); // Replace "YourWpfApp" with the namespace of your WPF app
+                var mainWindow = new GoalWin.Win(); // Replace "YourWpfApp" with the namespace of your WPF app
                 app.Run(mainWindow);
                
             });

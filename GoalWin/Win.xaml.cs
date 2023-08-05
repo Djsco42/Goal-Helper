@@ -32,7 +32,7 @@ namespace GoalWin
     /// </summary>
     /// 
 
-    public partial class MainWindow : Window
+    public partial class Win : Window
     {
         string GDateinfo;
         string GNameinfo;
@@ -60,7 +60,7 @@ namespace GoalWin
 
 
 
-        public MainWindow()
+        public Win()
         {
             InitializeComponent();
             Gref();
@@ -284,7 +284,7 @@ namespace GoalWin
             }
             if(e.Key== Key.S)
             {
-                var senderViewModel = new MainWindow();
+                var senderViewModel = new Win();
                 senderViewModel.UpdateStrings("First string", "Second string");
             }
         }
