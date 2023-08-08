@@ -1,9 +1,0 @@
-﻿<Application x:Class="Timer_pop_up.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Timer_pop_up"
-             StartupUri="Timerpop.xaml">
-    <Application.Resources>
-         
-    </Application.Resources>
-</Application>

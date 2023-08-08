@@ -23,7 +23,7 @@ using System.Collections.ObjectModel;
 using System.Globalization;
 using System.IO.Pipes;
 using System.Diagnostics;
-using Shared_Info;
+using Timer_pop_up;
 
 namespace GoalWin
 {
@@ -47,12 +47,9 @@ namespace GoalWin
         private DateTime lastWriteTime;
         bool Iscl = false;
 
-        private string FSess;
-        private string FBreak;
+        private String FSess;
+        private String FBreak;
 
-        public event EventHandler<SessBreakTimes> DataUpdated;
-
-        private SessBreakTimes SBTimes = new SessBreakTimes();
 
 
 
@@ -67,6 +64,7 @@ namespace GoalWin
             FileChanged();
 
         }
+
         public class GList
         {
             public string Name { get; set; }
@@ -209,19 +207,35 @@ namespace GoalWin
                             Session = "Session: " + words[5].Trim(),
                             Break = "Break: " + words[6].Trim()
                         });
-                    FSess = words[5].Trim();
-                    FBreak = words[6].Trim();
+                    //FSess = words[5].Trim();
+                    //FBreak = words[6].Trim();
 
 
                     }
                 }
+            Goal = new ObservableCollection<GList>(Goal.OrderBy(item => item.Pri));
 
-            Gcurrent.ItemsSource = Goal.OrderBy(item => item.Pri);
+            Gcurrent.ItemsSource = Goal;
 
-
+            if (Goal.Count > 0)
+            {
+                GList firstItem = Goal.FirstOrDefault(); 
+                FSess = ExtractTimePortion(firstItem.Session);
+                FBreak = ExtractTimePortion(firstItem.Break);
+            }
 
         }
 
+        private string ExtractTimePortion(string input)
+        {
+            // Assuming the input format is like "Session: 09:00 AM"
+            string[] parts = input.Split(' ');
+            if (parts.Length >= 2)
+            {
+                return parts[1]; // Return the time portion
+            }
+            return string.Empty;
+        }
 
         private void FileChanged()
         {
@@ -284,6 +298,10 @@ namespace GoalWin
             }
             if(e.Key== Key.S)
             {
+                Timerpop pop = new Timerpop();
+                pop.TSess = int.Parse(FSess);
+                pop.TBreak = int.Parse(FBreak);
+                pop.ShowDialog();
 
             }
         }

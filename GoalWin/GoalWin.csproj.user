@@ -9,6 +9,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Timerpop.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Win.xaml">
       <SubType>Designer</SubType>
     </Page>

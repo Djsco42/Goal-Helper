@@ -51,9 +51,7 @@ C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Goa
 C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Goal Helper.dll
 C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Goal Helper.pdb
 C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.dll
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Shared_Info.dll
 C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\GoalWin.pdb
-C:\Users\djsco\source\repos\Goal Helper\Goal Helper\bin\Debug\net6.0-windows\Shared_Info.pdb
 C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.csproj.AssemblyReference.cache
 C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\djsco\source\repos\Goal Helper\Goal Helper\obj\Debug\net6.0-windows\Goal Helper.AssemblyInfoInputs.cache
