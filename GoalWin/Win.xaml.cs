@@ -76,7 +76,7 @@ namespace GoalWin
         }
         private void Gsum_Click(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(Gname.Text))
+            if (!string.IsNullOrEmpty(Gname.Text) && !string.IsNullOrEmpty(Gsession.Text) && !string.IsNullOrEmpty(Gbreak.Text))
             {
                 
 
@@ -107,14 +107,7 @@ namespace GoalWin
                 {
                     GPri = "none";
                 }
-                if (string.IsNullOrEmpty(Gsession.Text))
-                {
-                    GSessioninfo = "none";
-                }
-                if (string.IsNullOrEmpty(Gbreak.Text))
-                {
-                    GBreakinfo = "none";
-                }
+
                 GDate.Text = "";
                 Gname.Text = "";
                 Gnote.Text = "";
@@ -136,7 +129,7 @@ namespace GoalWin
             else
             {
                 GInputState.Foreground = new SolidColorBrush(Colors.Red);
-                GInputState.Text = "Please Enter A Name For Your Goal";
+                GInputState.Text = "Please Fill Out All Required Fields";
             }
 
 
@@ -207,9 +200,6 @@ namespace GoalWin
                             Session = "Session: " + words[5].Trim(),
                             Break = "Break: " + words[6].Trim()
                         });
-                    //FSess = words[5].Trim();
-                    //FBreak = words[6].Trim();
-
 
                     }
                 }

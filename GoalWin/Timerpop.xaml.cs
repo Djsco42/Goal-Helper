@@ -18,6 +18,7 @@ using System.Windows.Threading;
 using System.Reflection;
 using static GoalWin.Win;
 using GoalWin;
+using System.Timers;
 
 namespace Timer_pop_up
 {
@@ -26,72 +27,87 @@ namespace Timer_pop_up
     /// </summary>
     public partial class Timerpop : Window
     {
-        private DispatcherTimer mainTimer;
-        private TimeSpan timer1Duration;
-        private TimeSpan timer2Duration;
-        private int currentState = 1;
-
+        DispatcherTimer Sess;
+        TimeSpan tsess;
+        DispatcherTimer Break;
+        TimeSpan tbreak;
+        bool isfirst = true;
+        bool issturn=true;
         public int TSess { get; set; }
         public int TBreak { get; set; }
 
         public Timerpop()
         {
             InitializeComponent();
-            mainTimer = new DispatcherTimer();
-            mainTimer.Interval = TimeSpan.FromSeconds(1);
-            mainTimer.Tick += MainTimer_Tick;
 
 
+            Sess = new DispatcherTimer(new TimeSpan(0, 0, 1), DispatcherPriority.Normal, delegate
+            {
+                if (issturn)
+                {
+                    if (isfirst == true)
+                    {
+                        tbreak = TimeSpan.FromSeconds(TBreak); T2.Text = tbreak.ToString("c");
+                        isfirst = false;
+                    }
+                    T1.Text = tsess.ToString("c");
+                    if (tsess == TimeSpan.Zero) 
+                    { 
+                        Sess.Stop(); 
+                        Break.Start(); 
+                        isfirst = true; 
+                        issturn = false;
+                        tbreak = tbreak.Add(TimeSpan.FromSeconds(-1));
+                    }
+                    tsess = tsess.Add(TimeSpan.FromSeconds(-1));
+                
+                }
+
+            }, Application.Current.Dispatcher);
+
+            Break = new DispatcherTimer(new TimeSpan(0, 0, 1), DispatcherPriority.Normal, delegate
+            {
+                if (issturn==false)
+                {
+                    if (isfirst == true)
+                    {
+                        tsess = TimeSpan.FromSeconds(TSess); T1.Text = tsess.ToString("c");
+                        isfirst = false;
+                    }
+                    T2.Text = tbreak.ToString("c");
+                    if (tbreak == TimeSpan.Zero) 
+                    { 
+                        Break.Stop(); 
+                        Sess.Start(); 
+                        isfirst = true; 
+                        issturn = true;
+                        tsess = tsess.Add(TimeSpan.FromSeconds(-1));
+                    }
+                    tbreak = tbreak.Add(TimeSpan.FromSeconds(-1));
+                }
+            }, Application.Current.Dispatcher);
+
+            Sess.Start();
 
 
         }
         private void tim_Loaded(object sender, RoutedEventArgs e)
         {
-            pepe.Text = TSess.ToString() + TBreak.ToString();
-            
-            timer2Duration = TimeSpan.FromMinutes(TBreak);
-            timer2TextBlock.Text = $"Timer 2: {timer2Duration:mm\\:ss}";
-            timer1Duration = TimeSpan.FromMinutes(TSess);
-            timer1TextBlock.Text = $"Timer 1: {timer1Duration:mm\\:ss}";
+            TSess = TSess * 60;
+            TBreak = TBreak * 60;
+
+            tsess = TimeSpan.FromSeconds(TSess);
+        }
+
+        private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+
         }
 
         private void StartTimers_Click(object sender, RoutedEventArgs e)
         {
-            mainTimer.Start();
+
         }
-
-        private void MainTimer_Tick(object sender, EventArgs e)
-        {
-            if (currentState == 1)
-            {
-                timer1Duration = timer1Duration.Subtract(TimeSpan.FromSeconds(1));
-                timer1TextBlock.Text = $"Timer 1: {timer1Duration:mm\\:ss}";
-
-                if (timer1Duration.TotalSeconds <= 0)
-                {
-                    timer1Duration = TimeSpan.FromMinutes(1);
-                    timer1TextBlock.Text = $"Timer 1: {timer1Duration:mm\\:ss}";
-                    currentState = 2;
-                    timer2Duration = TimeSpan.FromMinutes(1);
-                    timer2TextBlock.Text = $"Timer 2: {timer2Duration:mm\\:ss}";
-                }
-            }
-            else if (currentState == 2)
-            {
-                timer2Duration = timer2Duration.Subtract(TimeSpan.FromSeconds(1));
-                timer2TextBlock.Text = $"Timer 2: {timer2Duration:mm\\:ss}";
-
-                if (timer2Duration.TotalSeconds <= 0)
-                {
-                    timer2Duration = TimeSpan.FromMinutes(1);
-                    timer2TextBlock.Text = $"Timer 2: {timer2Duration:mm\\:ss}";
-                    currentState = 1;
-                    timer1Duration = TimeSpan.FromMinutes(1);
-                    timer1TextBlock.Text = $"Timer 1: {timer1Duration:mm\\:ss}";
-                }
-            }
-        }
-
 
     }
 }

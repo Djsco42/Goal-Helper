@@ -8,8 +8,8 @@
         Title="Timer Loop WPF App" Height="200" Width="300" Loaded="tim_Loaded">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock x:Name="timer1TextBlock" FontSize="20" Margin="0 0 0 10" />
-            <TextBlock x:Name="timer2TextBlock" FontSize="20" Margin="0 0 0 10" />
+            <TextBlock x:Name="T1" FontSize="20" Margin="0 0 0 10" />
+            <TextBlock x:Name="T2" FontSize="20" Margin="0 0 0 10" />
             <Button Content="Start Timers" Click="StartTimers_Click" />
         </StackPanel>
         <TextBlock HorizontalAlignment="Left" Margin="10,150,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" x:Name="pepe"/>
