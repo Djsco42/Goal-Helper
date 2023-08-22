@@ -288,14 +288,27 @@ namespace GoalWin
             }
             if(e.Key== Key.S)
             {
-                Timerpop pop = new Timerpop();
-                pop.TSess = int.Parse(FSess);
-                pop.TBreak = int.Parse(FBreak);
-                pop.ShowDialog();
 
             }
         }
-        
+
+        private void Gstart_Click(object sender, RoutedEventArgs e)
+        {
+            Gref();
+            if (FSess == null | FBreak == null)
+            {
+
+            }
+            else
+            {
+            Timerpop pop = new Timerpop();
+            pop.TSess = int.Parse(FSess);
+            pop.TBreak = int.Parse(FBreak);
+            pop.Show();
+            pop.Topmost = true;
+            }
+
+        }
     }
 
 }

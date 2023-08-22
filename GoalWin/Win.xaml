@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GoalWin"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="1200" 
+        Title="MainWindow" Height="580" Width="1200" 
         Background="#FFDE7575"
-        MinWidth="900"
-        MinHeight="550" KeyDown="Win_KeyDown"
+        KeyDown="Win_KeyDown"
+        ResizeMode="CanMinimize"
         
         >
     <Grid x:Name="Main">
@@ -31,10 +31,10 @@
                 <DatePicker x:Name="GDate" Grid.Row="2" VerticalAlignment="Center" Margin="66,10,66,10" Foreground="Black" BorderBrush="{x:Null}"/>
 
 
-                <Button x:Name="Gsum" Content="Summit Goal" Grid.Row="5" Margin="61,15,61,15"  BorderBrush="{x:Null}" Background="#FF1DCA5F" FontWeight="Bold" Click="Gsum_Click" MinHeight="30" MinWidth="120"/>
+                <Button x:Name="Gsum" Content="Summit Goal" Grid.Row="5" Margin="61,15,61,15"  BorderBrush="{x:Null}" Background="#FF13DC13" FontWeight="Bold" Click="Gsum_Click" MinHeight="30" MinWidth="120"/>
 
 
-                <Label x:Name="Glable" Grid.Row="0"  VerticalContentAlignment="Top" Content="Setting Up A Goal" Margin="33,13,33,13" Background="{x:Null}" Foreground="#FF44EB50" FontWeight="Bold" FontSize="20"/>
+                <Label x:Name="Glable" Grid.Row="0"  VerticalContentAlignment="Top" Content="Setting Up A Goal" Margin="33,13,33,13" Background="{x:Null}" Foreground="#FF00FF12" FontWeight="Bold" FontSize="20"/>
 
 
                 <Rectangle x:Name="Grec"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30" Margin="0,0,0,0" Grid.RowSpan="7"/>
@@ -107,11 +107,12 @@
             </Grid>
         </ScrollViewer>
 
-        <Grid Margin="0,36,36,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="361" Height="436" >
-            <Label x:Name="lable" Content="Current Goals" Margin="111,10,111,365" Background="{x:Null}" Foreground="#FF44EB50" FontWeight="Bold" FontSize="20"/>
-            <Rectangle x:Name="rec"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30" VerticalAlignment="Center" HorizontalAlignment="Center" Height="436" RenderTransformOrigin="0.5,0.5" Width="360"/>
+        <Grid Margin="0,36,36,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="361" Height="488" >
 
-            <ListView x:Name="Gcurrent" Margin="38,60,38,51" BorderBrush="{x:Null}" Background="#FFD893E3">
+            <Label x:Name="lable" Content="Current Goals" Margin="111,10,111,433" Background="{x:Null}" Foreground="#FF00FF12" FontWeight="Bold" FontSize="20"/>
+            <Rectangle x:Name="rec"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30" Margin="0,0,0,0"/>
+
+            <ListView x:Name="Gcurrent" Margin="38,60,38,161" BorderBrush="{x:Null}" Background="#FFD893E3">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" >
@@ -125,12 +126,14 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button x:Name="Gdel" Content="Delete Goal" HorizontalAlignment="Center" Margin="0,397,0,0" VerticalAlignment="Top" Background="#FFF72A2A" Foreground="Black" FontWeight="Bold" FontSize="15" Height="29" Width="122" Click="Gdel_Click"/>
+            <Button x:Name="Gdel" Content="Delete Goal" HorizontalAlignment="Center" Margin="0,423,0,0" VerticalAlignment="Top" Background="#FFF72A2A" Foreground="Black" FontWeight="Bold" FontSize="23" Height="42" Width="286" Click="Gdel_Click"/>
+            <Button x:Name="GStart" Content="Start Current Goal" HorizontalAlignment="Center" Margin="0,354,0,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" FontSize="23" Height="42" Width="286" Click="Gstart_Click" Background="#FF13DC13" BorderBrush="{x:Null}"/>
+
         </Grid>
         <Grid x:Name="time" Margin="328,36,630,0" VerticalAlignment="Top" Height="146">
             <Rectangle x:Name="trec"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30" Margin="0,0,0,0" />
 
-            <TextBlock x:Name="tlabel" Text="Set Work Sessions And Breaks (Min)" Background="{x:Null}" Foreground="#FF44EB50" FontWeight="Bold" FontSize="20" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="55"  Margin="16,10,16,0"/>
+            <TextBlock x:Name="tlabel" Text="Set Work Sessions And Breaks (Min)" Background="{x:Null}" Foreground="#FF00FF12" FontWeight="Bold" FontSize="20" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="55"  Margin="16,10,16,0"/>
 
             <TextBox x:Name="Gsession" Margin="10,0,10,52" BorderBrush="{x:Null}" FontSize="15" VerticalAlignment="Bottom" TextWrapping="Wrap" PreviewTextInput="NumericTextBox_PreviewTextInput">
                 <TextBox.Style>
@@ -154,7 +157,7 @@
                 </TextBox.Style>
             </TextBox>
 
-            <TextBox x:Name="Gbreak" Margin="16,111,16,0" BorderBrush="{x:Null}" FontSize="15" VerticalAlignment="Top" TextWrapping="Wrap" PreviewTextInput="NumericTextBox_PreviewTextInput" Height="25">
+            <TextBox x:Name="Gbreak" Margin="10,111,10,0" BorderBrush="{x:Null}" FontSize="15" VerticalAlignment="Top" TextWrapping="Wrap" PreviewTextInput="NumericTextBox_PreviewTextInput" Height="25">
                 <TextBox.Style>
                     <Style TargetType="TextBox">
                         <Style.Resources>

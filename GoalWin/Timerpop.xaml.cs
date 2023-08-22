@@ -99,15 +99,5 @@ namespace Timer_pop_up
             tsess = TimeSpan.FromSeconds(TSess);
         }
 
-        private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
-        {
-
-        }
-
-        private void StartTimers_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
     }
 }
