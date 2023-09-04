@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GoalWin"
         mc:Ignorable="d"
-        Title="MainWindow" Height="580" Width="1200" 
+        Title="MainWindow" Height="620" Width="1200" 
         Background="#FFDE7575"
         KeyDown="Win_KeyDown"
         ResizeMode="CanMinimize"
@@ -103,16 +103,19 @@
                         </Style>
                     </TextBox.Style>
                 </TextBox>
-                <TextBlock x:Name="GInputState" HorizontalAlignment="Center" Grid.Row="6" Margin="10,15,10,15" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" Height="45" FontSize="15" FontWeight="Bold" TextAlignment="Center"/>
+                <TextBlock x:Name="GInputState" HorizontalAlignment="Center" Grid.Row="6" Margin="0,15,0,15" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" Height="45" FontSize="15" FontWeight="Bold" TextAlignment="Center"/>
             </Grid>
         </ScrollViewer>
 
-        <Grid Margin="0,36,36,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="361" Height="488" >
+        <Grid Margin="0,36,36,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="361" Height="470" x:Name="Gshow" MouseLeave="Gshow_MouseLeave" >
 
-            <Label x:Name="lable" Content="Current Goals" Margin="111,10,111,433" Background="{x:Null}" Foreground="#FF00FF12" FontWeight="Bold" FontSize="20"/>
+            <TextBlock x:Name="Gpoperror" HorizontalAlignment="Center" Margin="0,465,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" Height="45" FontSize="15" FontWeight="Bold" TextAlignment="Center"/>
+
+
+            <Label x:Name="lable" Content="Current Goals" Margin="111,16,111,0" Background="{x:Null}" Foreground="#FF00FF12" FontWeight="Bold" FontSize="20" VerticalAlignment="Top"/>
             <Rectangle x:Name="rec"  Fill="#FF1BBCAD" Panel.ZIndex="-1" RadiusX="30" RadiusY="30" Margin="0,0,0,0"/>
 
-            <ListView x:Name="Gcurrent" Margin="38,60,38,161" BorderBrush="{x:Null}" Background="#FFD893E3">
+            <ListView x:Name="Gcurrent" BorderBrush="{x:Null}" Background="#FFD893E3" Height="229" Margin="38,74,38,0" VerticalAlignment="Top">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" >
@@ -126,8 +129,8 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button x:Name="Gdel" Content="Delete Goal" HorizontalAlignment="Center" Margin="0,423,0,0" VerticalAlignment="Top" Background="#FFF72A2A" Foreground="Black" FontWeight="Bold" FontSize="23" Height="42" Width="286" Click="Gdel_Click"/>
-            <Button x:Name="GStart" Content="Start Current Goal" HorizontalAlignment="Center" Margin="0,354,0,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" FontSize="23" Height="42" Width="286" Click="Gstart_Click" Background="#FF13DC13" BorderBrush="{x:Null}"/>
+            <Button x:Name="Gdel" Content="Delete Goal" HorizontalAlignment="Center" Margin="0,402,0,0" VerticalAlignment="Top" Background="#FFF72A2A" Foreground="Black" FontWeight="Bold" FontSize="23" Height="42" Width="286" Click="Gdel_Click"/>
+            <Button x:Name="GStart" Content="Start Current Goal" HorizontalAlignment="Center" Margin="0,330,0,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" FontSize="23" Height="42" Width="286" Click="Gstart_Click" Background="#FF13DC13" BorderBrush="{x:Null}"/>
 
         </Grid>
         <Grid x:Name="time" Margin="328,36,630,0" VerticalAlignment="Top" Height="146">

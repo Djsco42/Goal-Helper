@@ -213,6 +213,11 @@ namespace GoalWin
                 FSess = ExtractTimePortion(firstItem.Session);
                 FBreak = ExtractTimePortion(firstItem.Break);
             }
+            else
+            {
+                FSess = null;
+                FBreak = null;
+            }
 
         }
 
@@ -297,7 +302,9 @@ namespace GoalWin
             Gref();
             if (FSess == null | FBreak == null)
             {
-
+                Gshow.Height = 530;
+                Gpoperror.Foreground = new SolidColorBrush(Colors.Red);
+                Gpoperror.Text = "Please Add A Goal Before Starting One";
             }
             else
             {
@@ -308,6 +315,12 @@ namespace GoalWin
             pop.Topmost = true;
             }
 
+        }
+
+        private void Gshow_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Gshow.Height = 470;
+            Gpoperror.Text = "";
         }
     }
 
