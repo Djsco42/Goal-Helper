@@ -48,7 +48,6 @@ C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Debug\net6.0-windows\GoalWin
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Debug\net6.0-windows\GoalWin.runtimeconfig.json
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Debug\net6.0-windows\GoalWin.dll
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Debug\net6.0-windows\GoalWin.pdb
-C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\GoalWin.csproj.AssemblyReference.cache
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\Win.g.cs
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\GoalWin_MarkupCompile.cache
@@ -66,3 +65,6 @@ C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\GoalWin
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\ref\GoalWin.dll
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\Timerpop.g.cs
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\Timerpop.baml
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Debug\net6.0-windows\Stored Goals.txt
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\GoalWin_Content.g.cs
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Debug\net6.0-windows\GoalWin.sourcelink.json

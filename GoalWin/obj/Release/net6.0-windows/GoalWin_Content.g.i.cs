@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("txt/stored%20goals.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("stored%20goals.txt")]
 
 

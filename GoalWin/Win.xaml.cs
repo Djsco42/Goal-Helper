@@ -1,4 +1,5 @@
 ﻿//Oh ya MF, Main Ui is done! 7/20/23 10:30AM
+// GOOD LUCK for the 100th time Anya is amazing!! 12/2/23 6:30-7:30PM
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -40,7 +41,7 @@ namespace GoalWin
         string GPri;
         string GSessioninfo;
         string GBreakinfo;
-        string GfilePath = @"C:\Users\djsco\source\repos\Goal Helper\GoalWin\Stored Goals.txt";
+        string GfilePath = "Stored Goals.txt";
         string[] targetWords = { "Name of Goal:", "Date:", "Notes:", "Priority:", "Session:", "Break:" };
         string content = string.Empty;
         ObservableCollection<GList> Goal = new ObservableCollection<GList>();
@@ -61,7 +62,7 @@ namespace GoalWin
         {
             InitializeComponent();
             Gref();
-            FileChanged();
+            //FileChanged();
 
         }
 
@@ -123,7 +124,7 @@ namespace GoalWin
                 }
                 Gref();
                 Listtxt();
-                FileChanged();
+                //FileChanged();
                 //No goal name error
             }
             else
@@ -174,7 +175,7 @@ namespace GoalWin
             Gcurrent.ItemsSource = Goal.OrderBy(item => item.Pri);
             Listtxt();
             Gref();
-            FileChanged();
+            //FileChanged();
         }
 
         private void Gref()
@@ -232,7 +233,7 @@ namespace GoalWin
             return string.Empty;
         }
 
-        private void FileChanged()
+        /*private void FileChanged()
         {
             DateTime currentWriteTime = File.GetLastWriteTime(GfilePath);
             if (currentWriteTime != lastWriteTime)
@@ -248,7 +249,7 @@ namespace GoalWin
                 
             }
             // not been changed
-        }
+        }*/
 
         private void Listtxt()
         {

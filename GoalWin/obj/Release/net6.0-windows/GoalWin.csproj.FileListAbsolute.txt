@@ -3,13 +3,10 @@ C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Release\net6.0-windows\GoalW
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Release\net6.0-windows\GoalWin.runtimeconfig.json
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Release\net6.0-windows\GoalWin.dll
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Release\net6.0-windows\GoalWin.pdb
-C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\GoalWin.csproj.AssemblyReference.cache
-C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\MainWindow.g.cs
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\App.g.cs
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\GoalWin_Content.g.cs
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\GoalWin_MarkupCompile.cache
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\GoalWin_MarkupCompile.lref
-C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\MainWindow.baml
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\GoalWin.g.resources
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\GoalWin.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\GoalWin.AssemblyInfoInputs.cache
@@ -20,3 +17,9 @@ C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\refin
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\GoalWin.pdb
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\GoalWin.genruntimeconfig.cache
 C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\ref\GoalWin.dll
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\bin\Release\net6.0-windows\Stored Goals.txt
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\Timerpop.g.cs
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\Win.g.cs
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\Timerpop.baml
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\Win.baml
+C:\Users\djsco\source\repos\Goal Helper\GoalWin\obj\Release\net6.0-windows\GoalWin.sourcelink.json

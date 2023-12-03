@@ -14,4 +14,14 @@
     <Page Remove="txt\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Stored Goals.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Stored Goals.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
